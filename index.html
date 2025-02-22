@@ -3,44 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Guía turística oficial en Barcelona y Costa Brava - Svetlana Savenko. Excursiones privadas, tours temáticos y más.">
-    <title>Barcelona & Costa Brava - Guía Turística</title>
+    <meta name="description" content="Guía turística oficial en Barcelona y Costa Brava - Svetlana Savenko. Excursiones privadas, tours temáticos y experiencias únicas en Cataluña.">
+    <meta name="keywords" content="guía turística, Barcelona, Costa Brava, excursiones privadas, Gaudí, Dalí, Montserrat, Cataluña">
+    <meta name="author" content="Svetlana Savenko">
+    <title>Barcelona & Costa Brava con Svetlana</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Pantalla de Inicio -->
     <div class="splash-screen" id="splash">
-        <a href="#main-content" class="home-icon" onclick="hideSplash()">
-            <img src="assets/home-icon.png" alt="Icono de casa" class="home-img">
-        </a>
-        <div class="social-icons">
-            <a href="https://www.instagram.com/barcelonacostabrava/" target="_blank">
-                <img src="assets/instagram-icon.png" alt="Instagram" class="social-img">
+        <div class="splash-content">
+            <a href="#main-content" class="home-icon" onclick="hideSplash()">
+                <img src="assets/home-icon.png" alt="Bienvenidos a mi mundo" class="home-img">
             </a>
-            <a href="https://www.tiktok.com/@barcelonacostabrava" target="_blank">
-                <img src="assets/tiktok-icon.png" alt="TikTok" class="social-img">
-            </a>
-            <a href="https://www.youtube.com/@barcelonacostabrava" target="_blank">
-                <img src="assets/youtube-icon.png" alt="YouTube" class="social-img">
-            </a>
+            <p class="splash-text">Descubre Cataluña conmigo - Svetlana Savenko</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/barcelonacostabrava/" target="_blank">
+                    <img src="assets/instagram-icon.png" alt="Instagram" class="social-img">
+                </a>
+                <a href="https://www.tiktok.com/@barcelonacostabrava" target="_blank">
+                    <img src="assets/tiktok-icon.png" alt="TikTok" class="social-img">
+                </a>
+                <a href="https://www.youtube.com/@barcelonacostabrava" target="_blank">
+                    <img src="assets/youtube-icon.png" alt="YouTube" class="social-img">
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Contenido Principal -->
     <div id="main-content" class="main-content hidden">
+        <!-- Navegación -->
         <header>
-            <nav>
+            <nav class="nav-container">
                 <div class="logo">
                     <a href="#main-content">Barcelona & Costa Brava</a>
                 </div>
+                <div class="menu-toggle">☰</div>
                 <ul class="nav-links">
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#quien-soy">Quién Soy</a></li>
                     <li><a href="#servicios">Servicios</a></li>
                     <li><a href="#excursiones">Excursiones</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><button onclick="showSpanish()" class="lang-btn">Español</button></li>
-                    <li><button onclick="showEnglish()" class="lang-btn">English</button></li>
+                    <li><button onclick="showSpanish()" class="lang-btn">ES</button></li>
+                    <li><button onclick="showEnglish()" class="lang-btn">EN</button></li>
                 </ul>
             </nav>
         </header>
@@ -48,71 +56,114 @@
         <!-- Versión en Español -->
         <div id="content-es" class="content-lang">
             <main>
-                <section id="inicio">
-                    <h1>Bienvenidos a Barcelona y Costa Brava</h1>
-                    <p>¡Hola! Soy Svetlana Savenko, guía turística oficial en Cataluña. Te invito a descubrir conmigo los rincones más espectaculares de Barcelona y la Costa Brava: desde la arquitectura única de Gaudí hasta las calas escondidas del Mediterráneo.</p>
-                    <p>Con más de 10 años de experiencia, ofrezco excursiones privadas, tours temáticos y un servicio personalizado para que vivas Cataluña como nunca antes. ¿Listo para explorar?</p>
+                <!-- Inicio -->
+                <section id="inicio" class="hero-section">
+                    <h1>Explora Cataluña conmigo</h1>
+                    <p>¡Bienvenidos! Soy Svetlana Savenko, tu guía turística oficial en Barcelona y Costa Brava. Te invito a descubrir la magia de Cataluña: sus ciudades vibrantes, sus costas salvajes y su rica historia. Vive una experiencia única y personalizada.</p>
+                    <a href="#contacto" class="cta-button">Reserva tu aventura</a>
                 </section>
 
-                <section id="quien-soy">
-                    <h2>¿Quién Soy?</h2>
-                    <p>Soy Svetlana Savenko, guía turística licenciada en Cataluña. Originaria de Ucrania, llegué a Barcelona hace más de una década y me enamoré de esta tierra. Hablo español, inglés, ruso y ucraniano, lo que me permite conectar con viajeros de todo el mundo.</p>
-                    <p>Mi pasión es compartir la historia, la cultura y los secretos de Cataluña. Ya sea recorriendo las calles de Barcelona, explorando los pueblos medievales de la Costa Brava o siguiendo los pasos de Salvador Dalí, mi objetivo es que tengas una experiencia inolvidable.</p>
-                    <p>Con una trayectoria de más de 10 años guiando a turistas, combino conocimiento, entusiasmo y un enfoque personalizado para que cada visita sea especial.</p>
+                <!-- Quién Soy -->
+                <section id="quien-soy" class="about-section">
+                    <h2>¿Quién es Svetlana?</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>Soy Svetlana Savenko, guía turística licenciada en Cataluña con más de 10 años de experiencia. Originaria de Ucrania, llegué a Barcelona y me enamoré de sus calles, su cultura y su gente. Hablo español, inglés, ruso y ucraniano, lo que me permite conectar con viajeros de todo el mundo.</p>
+                            <p>Mi pasión es mostrarte los tesoros de esta región: desde la arquitectura de Gaudí en Barcelona hasta los pueblos medievales de la Costa Brava. Cada tour es una oportunidad para compartir mi amor por Cataluña y crear recuerdos inolvidables.</p>
+                        </div>
+                        <img src="assets/svetlana-profile.jpg" alt="Svetlana Savenko" class="profile-img">
+                    </div>
                 </section>
 
-                <section id="servicios">
-                    <h2>Servicios</h2>
-                    <p>Ofrezco una variedad de servicios para que tu viaje sea perfecto:</p>
-                    <ul>
-                        <li><strong>Excursiones privadas:</strong> Tours diseñados exclusivamente para ti y tu grupo, adaptados a tus intereses y ritmo.</li>
-                        <li><strong>Visitas guiadas:</strong> Recorridos por Barcelona, Costa Brava, Montserrat y otros destinos destacados.</li>
-                        <li><strong>Tours temáticos:</strong> Desde la Barcelona de Gaudí hasta la historia medieval de Cataluña o la gastronomía local.</li>
-                        <li><strong>Asesoramiento personalizado:</strong> Recomendaciones sobre rutas, restaurantes, transporte y más para optimizar tu viaje.</li>
-                        <li><strong>Servicio de transfer:</strong> Transporte privado con conductor para moverte cómodamente entre destinos.</li>
-                    </ul>
-                    <p>Todos mis servicios están pensados para ofrecerte flexibilidad, comodidad y una experiencia única.</p>
-                </section>
-
-                <section id="excursiones">
-                    <h2>Excursiones Destacadas</h2>
-                    <p>Aquí tienes algunas de las experiencias que puedo ofrecerte:</p>
-                    <div class="excursion-list">
-                        <div class="excursion-item">
-                            <h3>Barcelona Modernista</h3>
-                            <p>Un recorrido por lo mejor del modernismo catalán: la Sagrada Familia, Casa Batlló, Casa Milà (La Pedrera), Park Güell y el Palau de la Música Catalana. Descubre la genialidad de Gaudí y otros arquitectos de la época.</p>
+                <!-- Servicios -->
+                <section id="servicios" class="services-section">
+                    <h2>Servicios Personalizados</h2>
+                    <p>Ofrezco experiencias únicas adaptadas a tus intereses:</p>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <h3>Excursiones Privadas</h3>
+                            <p>Tours exclusivos para ti y tu grupo, con rutas diseñadas a medida según tus gustos.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Costa Brava Secreta</h3>
-                            <p>Explora las joyas ocultas de la Costa Brava: calas como Aiguablava y Sa Futadera, pueblos medievales como Pals, Peratallada y Begur, y paisajes que quitan el aliento.</p>
+                        <div class="service-item">
+                            <h3>Visitas Guiadas</h3>
+                            <p>Explora Barcelona, Costa Brava y otros destinos con un guía experto.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Ruta Dalí</h3>
-                            <p>Sumérgete en el mundo surrealista de Salvador Dalí visitando el Teatro-Museo Dalí en Figueres, su casa en Portlligat y el Castillo de Púbol, dedicado a su musa Gala.</p>
+                        <div class="service-item">
+                            <h3>Tours Temáticos</h3>
+                            <p>Sumérgete en la historia, el arte (Gaudí, Dalí) o la gastronomía catalana.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Montserrat</h3>
-                            <p>Visita la montaña sagrada de Montserrat, su monasterio benedictino y la Virgen Moreneta. Disfruta de vistas panorámicas y senderos naturales únicos.</p>
+                        <div class="service-item">
+                            <h3>Asesoramiento</h3>
+                            <p>Planificación de rutas, recomendaciones y todo lo que necesitas para tu viaje.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Girona y Besalú</h3>
-                            <p>Descubre la histórica Girona con su barrio judío y catedral, y el encantador pueblo medieval de Besalú con su famoso puente románico.</p>
-                        </div>
-                        <div class="excursion-item">
-                            <h3>Ruta del Vino</h3>
-                            <p>Un tour por la región del Penedès, famosa por sus vinos y cavas. Incluye visitas a bodegas y catas para los amantes de la enología.</p>
+                        <div class="service-item">
+                            <h3>Transfer Privado</h3>
+                            <p>Traslados cómodos entre destinos para que no te preocupes por nada.</p>
                         </div>
                     </div>
-                    <p>Estas son solo algunas opciones. Puedo personalizar cualquier itinerario según tus intereses: historia, arte, naturaleza o gastronomía.</p>
                 </section>
 
-                <section id="contacto">
-                    <h2>Contacto</h2>
-                    <p>¿Quieres empezar tu aventura en Cataluña? Estoy aquí para ayudarte:</p>
-                    <p><strong>Email:</strong> <a href="mailto:svetlana@barcelona-costabrava.com">svetlana@barcelona-costabrava.com</a></p>
-                    <p><strong>Teléfono:</strong> +34 622 72 65 07</p>
-                    <p><strong>WhatsApp:</strong> +34 622 72 65 07</p>
-                    <p>Escríbeme para reservar una excursión, pedir más información o planificar tu viaje. ¡Respondaré lo antes posible!</p>
+                <!-- Excursiones -->
+                <section id="excursiones" class="tours-section">
+                    <h2>Excursiones Inolvidables</h2>
+                    <p>Descubre mis rutas más populares y personalizables:</p>
+                    <div class="tours-grid">
+                        <div class="tour-item">
+                            <h3>Barcelona Modernista</h3>
+                            <p>Recorre las joyas de Gaudí: Sagrada Familia, Casa Batlló, Park Güell, Casa Milà y el Palau de la Música. Un viaje al corazón del modernismo catalán.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Costa Brava Salvaje</h3>
+                            <p>Explora calas como Aiguablava, Sa Futadera y Tamariu, y pueblos encantadores como Pals, Begur y Peratallada. Naturaleza y tradición mediterránea.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Ruta Dalí</h3>
+                            <p>Visita el Teatro-Museo en Figueres, la Casa-Museo en Portlligat y el Castillo de Púbol. Un homenaje al genio surrealista.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Montserrat Mágico</h3>
+                            <p>Descubre la montaña sagrada, su monasterio, la Virgen Moreneta y rutas naturales con vistas espectaculares.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Girona y Besalú</h3>
+                            <p>Pasea por el barrio judío de Girona y el puente románico de Besalú. Historia medieval en estado puro.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Ruta del Vino y Cava</h3>
+                            <p>Explora el Penedès con visitas a bodegas, catas de vino y cava, y paisajes de viñedos.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Tossa de Mar</h3>
+                            <p>Un pueblo costero con murallas medievales, playas cristalinas y un encanto único.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonios -->
+                <section id="testimonios" class="testimonials-section">
+                    <h2>Qué Dicen Mis Viajeros</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-item">
+                            <p>"Svetlana nos llevó por la Costa Brava y fue increíble. Su pasión y conocimiento hicieron el viaje especial." - María G.</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"La ruta de Gaudí con Svetlana fue mágica. Nos explicó cada detalle con entusiasmo." - Alex P.</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"Un día perfecto en Montserrat gracias a su planificación. ¡Volveremos!" - Laura S.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contacto -->
+                <section id="contacto" class="contact-section">
+                    <h2>¡Hablemos!</h2>
+                    <p>¿Listo para descubrir Cataluña? Contáctame y empecemos a planificar:</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:svetlana@barcelona-costabrava.com">svetlana@barcelona-costabrava.com</a></p>
+                        <p><strong>Teléfono:</strong> +34 622 72 65 07</p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/34622726507" target="_blank">+34 622 72 65 07</a></p>
+                    </div>
                 </section>
             </main>
         </div>
@@ -120,77 +171,121 @@
         <!-- Versión en Inglés -->
         <div id="content-en" class="content-lang hidden">
             <main>
-                <section id="home">
-                    <h1>Welcome to Barcelona & Costa Brava</h1>
-                    <p>Hello! I’m Svetlana Savenko, an official tour guide in Catalonia. Join me to discover the most spectacular corners of Barcelona and Costa Brava: from Gaudí’s unique architecture to the hidden coves of the Mediterranean.</p>
-                    <p>With over 10 years of experience, I offer private tours, themed experiences, and personalized services to make your trip to Catalonia truly unforgettable. Ready to explore?</p>
+                <!-- Home -->
+                <section id="inicio" class="hero-section">
+                    <h1>Explore Catalonia with Me</h1>
+                    <p>Welcome! I’m Svetlana Savenko, your official tour guide in Barcelona and Costa Brava. Join me to uncover the magic of Catalonia: its vibrant cities, wild coastlines, and rich history. Enjoy a unique, personalized experience.</p>
+                    <a href="#contact" class="cta-button">Book Your Adventure</a>
                 </section>
 
-                <section id="about">
-                    <h2>About Me</h2>
-                    <p>I’m Svetlana Savenko, a licensed tour guide in Catalonia. Originally from Ukraine, I arrived in Barcelona over a decade ago and fell in love with this land. I speak Spanish, English, Russian, and Ukrainian, allowing me to connect with travelers from all over the world.</p>
-                    <p>My passion is sharing the history, culture, and secrets of Catalonia. Whether it’s walking through the streets of Barcelona, exploring Costa Brava’s medieval villages, or retracing Salvador Dalí’s footsteps, my goal is to give you a memorable experience.</p>
-                    <p>With more than 10 years guiding tourists, I blend knowledge, enthusiasm, and a personal touch to make every tour special.</p>
+                <!-- About Me -->
+                <section id="quien-soy" class="about-section">
+                    <h2>Who is Svetlana?</h2>
+                    <div class="about-content">
+                        <div class="about-text">
+                            <p>I’m Svetlana Savenko, a licensed tour guide in Catalonia with over 10 years of experience. Originally from Ukraine, I arrived in Barcelona and fell in love with its streets, culture, and people. I speak Spanish, English, Russian, and Ukrainian, connecting with travelers worldwide.</p>
+                            <p>My passion is revealing the treasures of this region: from Gaudí’s architecture in Barcelona to the medieval villages of Costa Brava. Every tour is a chance to share my love for Catalonia and create unforgettable memories.</p>
+                        </div>
+                        <img src="assets/svetlana-profile.jpg" alt="Svetlana Savenko" class="profile-img">
+                    </div>
                 </section>
 
-                <section id="services">
-                    <h2>Services</h2>
-                    <p>I offer a range of services to ensure your trip is perfect:</p>
-                    <ul>
-                        <li><strong>Private Tours:</strong> Exclusively designed for you and your group, tailored to your interests and pace.</li>
-                        <li><strong>Guided Visits:</strong> Tours in Barcelona, Costa Brava, Montserrat, and other top destinations.</li>
-                        <li><strong>Themed Tours:</strong> From Gaudí’s Barcelona to Catalonia’s medieval history or local gastronomy.</li>
-                        <li><strong>Personalized Advice:</strong> Recommendations on routes, restaurants, transportation, and more to enhance your trip.</li>
-                        <li><strong>Transfer Service:</strong> Private transportation with a driver for comfortable travel between destinations.</li>
-                    </ul>
-                    <p>All my services are designed to provide flexibility, comfort, and a unique experience.</p>
-                </section>
-
-                <section id="tours">
-                    <h2>Featured Tours</h2>
-                    <p>Here are some of the experiences I can offer:</p>
-                    <div class="excursion-list">
-                        <div class="excursion-item">
-                            <h3>Modernist Barcelona</h3>
-                            <p>A tour through the best of Catalan modernism: Sagrada Familia, Casa Batlló, Casa Milà (La Pedrera), Park Güell, and Palau de la Música Catalana. Discover the genius of Gaudí and his contemporaries.</p>
+                <!-- Services -->
+                <section id="servicios" class="services-section">
+                    <h2>Personalized Services</h2>
+                    <p>I offer unique experiences tailored to your interests:</p>
+                    <div class="services-grid">
+                        <div class="service-item">
+                            <h3>Private Tours</h3>
+                            <p>Exclusive tours for you and your group, customized to your preferences.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Secret Costa Brava</h3>
-                            <p>Explore the hidden gems of Costa Brava: crystal-clear coves like Aiguablava and Sa Futadera, medieval villages like Pals, Peratallada, and Begur, and breathtaking landscapes.</p>
+                        <div class="service-item">
+                            <h3>Guided Visits</h3>
+                            <p>Explore Barcelona, Costa Brava, and beyond with an expert guide.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Dalí Route</h3>
-                            <p>Dive into Salvador Dalí’s surreal world by visiting the Dalí Theatre-Museum in Figueres, his home in Portlligat, and Púbol Castle, dedicated to his muse Gala.</p>
+                        <div class="service-item">
+                            <h3>Themed Tours</h3>
+                            <p>Dive into history, art (Gaudí, Dalí), or Catalan gastronomy.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Montserrat</h3>
-                            <p>Visit the sacred Montserrat mountain, its Benedictine monastery, and the Black Madonna. Enjoy panoramic views and unique natural trails.</p>
+                        <div class="service-item">
+                            <h3>Travel Advice</h3>
+                            <p>Route planning, recommendations, and everything you need for your trip.</p>
                         </div>
-                        <div class="excursion-item">
-                            <h3>Girona and Besalú</h3>
-                            <p>Discover historic Girona with its Jewish Quarter and cathedral, and the charming medieval village of Besalú with its iconic Romanesque bridge.</p>
-                        </div>
-                        <div class="excursion-item">
-                            <h3>Wine Route</h3>
-                            <p>A tour through the Penedès region, famous for its wines and cavas. Includes visits to wineries and tastings for wine enthusiasts.</p>
+                        <div class="service-item">
+                            <h3>Private Transfers</h3>
+                            <p>Comfortable transportation between destinations, hassle-free.</p>
                         </div>
                     </div>
-                    <p>These are just a few options. I can customize any itinerary based on your interests: history, art, nature, or gastronomy.</p>
                 </section>
 
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <p>Ready to start your adventure in Catalonia? I’m here to help:</p>
-                    <p><strong>Email:</strong> <a href="mailto:svetlana@barcelona-costabrava.com">svetlana@barcelona-costabrava.com</a></p>
-                    <p><strong>Phone:</strong> +34 622 72 65 07</p>
-                    <p><strong>WhatsApp:</strong> +34 622 72 65 07</p>
-                    <p>Contact me to book a tour, request more information, or plan your trip. I’ll reply as soon as possible!</p>
+                <!-- Tours -->
+                <section id="excursiones" class="tours-section">
+                    <h2>Unforgettable Tours</h2>
+                    <p>Discover my most popular and customizable routes:</p>
+                    <div class="tours-grid">
+                        <div class="tour-item">
+                            <h3>Modernist Barcelona</h3>
+                            <p>Visit Gaudí’s gems: Sagrada Familia, Casa Batlló, Park Güell, Casa Milà, and Palau de la Música. A journey into Catalan modernism.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Wild Costa Brava</h3>
+                            <p>Explore coves like Aiguablava, Sa Futadera, and Tamariu, and charming villages like Pals, Begur, and Peratallada. Nature and Mediterranean tradition.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Dalí Route</h3>
+                            <p>See the Theatre-Museum in Figueres, the Portlligat House, and Púbol Castle. A tribute to the surrealist genius.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Magic Montserrat</h3>
+                            <p>Discover the sacred mountain, its monastery, the Black Madonna, and stunning natural trails.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Girona and Besalú</h3>
+                            <p>Stroll through Girona’s Jewish Quarter and Besalú’s Romanesque bridge. Pure medieval history.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Wine and Cava Route</h3>
+                            <p>Explore Penedès with winery visits, wine and cava tastings, and vineyard landscapes.</p>
+                        </div>
+                        <div class="tour-item">
+                            <h3>Tossa de Mar</h3>
+                            <p>A coastal town with medieval walls, pristine beaches, and unique charm.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Testimonials -->
+                <section id="testimonios" class="testimonials-section">
+                    <h2>What My Travelers Say</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-item">
+                            <p>"Svetlana took us through Costa Brava, and it was amazing. Her passion and knowledge made it special." - María G.</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"The Gaudí tour with Svetlana was magical. She explained every detail with enthusiasm." - Alex P.</p>
+                        </div>
+                        <div class="testimonial-item">
+                            <p>"A perfect day in Montserrat thanks to her planning. We’ll be back!" - Laura S.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section id="contacto" class="contact-section">
+                    <h2>Let’s Talk!</h2>
+                    <p>Ready to discover Catalonia? Contact me to start planning:</p>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> <a href="mailto:svetlana@barcelona-costabrava.com">svetlana@barcelona-costabrava.com</a></p>
+                        <p><strong>Phone:</strong> +34 622 72 65 07</p>
+                        <p><strong>WhatsApp:</strong> <a href="https://wa.me/34622726507" target="_blank">+34 622 72 65 07</a></p>
+                    </div>
                 </section>
             </main>
         </div>
 
-        <footer>
-            <p>© 2025 Barcelona & Costa Brava by Svetlana Savenko</p>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2025 Barcelona & Costa Brava by Svetlana Savenko. Todos los derechos reservados.</p>
             <div class="social-links">
                 <a href="https://www.instagram.com/barcelonacostabrava/" target="_blank">Instagram</a> |
                 <a href="https://www.tiktok.com/@barcelonacostabrava" target="_blank">TikTok</a> |
@@ -199,7 +294,7 @@
         </footer>
     </div>
 
-    <!-- Script básico para manejar la pantalla de inicio y el cambio de idioma -->
+    <!-- Script para manejar la pantalla de inicio y el cambio de idioma -->
     <script>
         function hideSplash() {
             document.getElementById('splash').classList.add('hidden');
@@ -216,10 +311,11 @@
             document.getElementById('content-es').classList.add('hidden');
             document.getElementById('content-en').classList.remove('hidden');
         }
-<script>
-    document.querySelector('nav::after').addEventListener('click', () => {
-        document.querySelector('.nav-links').classList.toggle('active');
-    });
-</script>
+
+        // Toggle menú móvil
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
