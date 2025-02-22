@@ -3,20 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcelona Costa Brava</title>
+    <title>Barcelona y Costa Brava</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Barra de navegación -->
     <header>
-        <h1>Bienvenido a Barcelona y Costa Brava</h1>
-        <p>Tu mejor guía para tours y experiencias en Barcelona y la Costa Brava.</p>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <section>
-        <h2>Destinos destacados</h2>
-        <p>Descubre los mejores lugares para visitar en Barcelona y Costa Brava.</p>
+
+    <!-- Sección de bienvenida -->
+    <section id="inicio">
+        <div class="bienvenida">
+            <h1>Descubre Barcelona y la Costa Brava</h1>
+            <p>Disfruta de un viaje inolvidable explorando los mejores destinos turísticos de Barcelona y la Costa Brava.</p>
+            <a href="#tours" class="btn">Explorar Tours</a>
+        </div>
     </section>
+
+    <!-- Tours disponibles -->
+    <section id="tours">
+        <h2>Nuetros Tours Populares</h2>
+        <div class="tour">
+            <img src="imagenes/barcelona-tour.jpg" alt="Tour por Barcelona">
+            <h3>Tour por Barcelona</h3>
+            <p>Recorre los monumentos más emblemáticos de Barcelona, desde la Sagrada Familia hasta el Parque Güell.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+        <div class="tour">
+            <img src="imagenes/costa-brava-tour.jpg" alt="Tour por Costa Brava">
+            <h3>Tour por Costa Brava</h3>
+            <p>Disfruta de las playas más hermosas y los pueblos costeros llenos de encanto de la Costa Brava.</p>
+            <a href="#" class="btn">Ver más</a>
+        </div>
+    </section>
+
+    <!-- Sección de testimonios -->
+    <section id="testimonios">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonio">
+            <p>"Un viaje increíble, el tour por Barcelona fue una experiencia única, ¡definitivamente lo recomiendo!"</p>
+            <p><strong>Juan Pérez</strong></p>
+        </div>
+        <div class="testimonio">
+            <p>"La Costa Brava es impresionante, las vistas, la comida, todo fue perfecto. ¡Gracias por una experiencia tan maravillosa!"</p>
+            <p><strong>Ana González</strong></p>
+        </div>
+    </section>
+
+    <!-- Sección de contacto -->
+    <section id="contacto">
+        <h2>Contacta con nosotros</h2>
+        <p>¿Tienes alguna pregunta o quieres reservar un tour? ¡Ponte en contacto con nosotros!</p>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Barcelona Costa Brava. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Barcelona y Costa Brava. Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>
