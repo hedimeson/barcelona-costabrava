@@ -13,6 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Intro Animation -->
+    <div class="intro-overlay">
+        <div class="intro-icons">
+            <a href="#home" class="intro-icon home-icon" aria-label="Ir a la página principal">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank" class="intro-icon social-icon" aria-label="Ir a Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank" class="intro-icon social-icon" aria-label="Ir a YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://tiktok.com" target="_blank" class="intro-icon social-icon" aria-label="Ir a TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar">
@@ -24,9 +44,8 @@
                 <li><a href="#about" data-lang="es" aria-label="Sobre Mí">Sobre Mí</a></li>
                 <li><a href="#tours" data-lang="es" aria-label="Excursiones">Excursiones</a></li>
                 <li><a href="#gallery" data-lang="es" aria-label="Galería">Galería</a></li>
-                <li><a href="#testimonials" data-lang="es" aria-label="Testimonios">Testimonios</a></li>
-                <li><a href="#faq" data-lang="es" aria-label="FAQ">FAQ</a></li>
                 <li><a href="#contact" data-lang="es" aria-label="Contacto">Contacto</a></li>
+                <li><a href="#booking" data-lang="es" aria-label="Reservas">Reservas</a></li>
                 <li class="lang-switcher">
                     <select id="language" aria-label="Seleccionar idioma">
                         <option value="es">Español</option>
@@ -111,7 +130,7 @@
                             <li><strong>Precio:</strong> Desde 50€/persona</li>
                             <li><strong>Incluye:</strong> Guía licenciada, entradas prioritarias</li>
                         </ul>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
+                        <a href="#booking" class="btn-tour" data-lang="es">Reservar</a>
                     </div>
                 </div>
                 <div class="tour-card">
@@ -125,7 +144,7 @@
                             <li><strong>Precio:</strong> Desde 80€/persona</li>
                             <li><strong>Incluye:</strong> Transporte, guía, degustación opcional</li>
                         </ul>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
+                        <a href="#booking" class="btn-tour" data-lang="es">Reservar</a>
                     </div>
                 </div>
                 <div class="tour-card">
@@ -139,7 +158,7 @@
                             <li><strong>Precio:</strong> Desde 120€/persona</li>
                             <li><strong>Incluye:</strong> Transporte, entradas, guía experta</li>
                         </ul>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
+                        <a href="#booking" class="btn-tour" data-lang="es">Reservar</a>
                     </div>
                 </div>
                 <div class="tour-card">
@@ -153,7 +172,7 @@
                             <li><strong>Precio:</strong> Desde 70€/persona</li>
                             <li><strong>Incluye:</strong> Transporte, guía, entradas</li>
                         </ul>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
+                        <a href="#booking" class="btn-tour" data-lang="es">Reservar</a>
                     </div>
                 </div>
             </div>
@@ -205,61 +224,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials">
-        <div class="container">
-            <h2 data-lang="es">Lo Que Dicen Nuestros Viajeros</h2>
-            <div class="testimonial-slider">
-                <div class="testimonial-slide active">
-                    <p data-lang="es">"Svetlana transformó nuestro viaje a Barcelona en algo especial. Su conocimiento sobre Gaudí y la historia de la ciudad es impresionante. ¡Recomiendo el tour modernista!"</p>
-                    <span data-lang="es">— Ana M., Sevilla</span>
-                </div>
-                <div class="testimonial-slide">
-                    <p data-lang="es">"La ruta por Costa Brava fue espectacular. Las calas, los pueblos y las historias que Svetlana compartió hicieron el día inolvidable."</p>
-                    <span data-lang="es">— Peter K., New York</span>
-                </div>
-                <div class="testimonial-slide">
-                    <p data-lang="es">"El tour de Dalí con Svetlana fue una experiencia única. Su pasión por el arte y la cultura catalana es contagiosa."</p>
-                    <span data-lang="es">— Clara R., Buenos Aires</span>
-                </div>
-            </div>
-            <div class="slider-dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <h2 data-lang="es">Preguntas Frecuentes</h2>
-            <div class="faq-accordion">
-                <div class="faq-item">
-                    <h3 data-lang="es">¿Qué incluye cada tour?</h3>
-                    <p data-lang="es">Todos los tours incluyen una guía licenciada, transporte privado (si aplica), entradas a monumentos principales y recomendaciones personalizadas. No se incluyen comidas ni alojamiento, salvo que se indique lo contrario.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 data-lang="es">¿Puedo personalizar mi tour?</h3>
-                    <p data-lang="es">¡Claro! Contacta conmigo para ajustar horarios, destinos o actividades según tus preferencias. Mi objetivo es ofrecerte una experiencia única y a medida.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 data-lang="es">¿Son los tours aptos para todas las edades?</h3>
-                    <p data-lang="es">Sí, adapto el ritmo y las actividades a las necesidades del grupo. Por favor, indícame cualquier requerimiento especial al reservar.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 data-lang="es">¿Cómo reservo un tour?</h3>
-                    <p data-lang="es">Rellena el formulario de contacto con tus fechas y preferencias o envía un email a svetlana@barcelona-costabrava.com. Te responderé en menos de 24 horas.</p>
-                </div>
-                <div class="faq-item">
-                    <h3 data-lang="es">¿Qué pasa si llueve?</h3>
-                    <p data-lang="es">Los tours se adaptan al clima. Si es necesario, modificamos el itinerario para aprovechar al máximo tu día, priorizando lugares cubiertos o actividades alternativas.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
@@ -271,9 +235,9 @@
                     <p><i class="fas fa-phone"></i> <span data-lang="es">Teléfono:</span> +34 123 456 789</p>
                     <p><i class="fas fa-map-marker-alt"></i> <span data-lang="es">Ubicación:</span> Barcelona, España</p>
                     <div class="social-links">
-                        <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <form class="contact-form" action="mailto:svetlana@barcelona-costabrava.com" method="post" enctype="text/plain">
@@ -291,256 +255,6 @@
                     </div>
                     <button type="submit" class="btn" data-lang="es">Enviar Mensaje</button>
                 </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Highlights Section -->
-    <section id="highlights" class="highlights">
-        <div class="container">
-            <h2 data-lang="es">Destacados del Mes</h2>
-            <p class="section-subtitle" data-lang="es">Experiencias especiales seleccionadas para ti</p>
-            <div class="highlights-grid">
-                <div class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barcelona Skyline">
-                    <div class="highlight-info">
-                        <h3 data-lang="es">Atardecer en Barcelona</h3>
-                        <p data-lang="es">Disfruta de una visita guiada al atardecer por los miradores más espectaculares de Barcelona, como el Bunkers del Carmel.</p>
-                        <a href="#contact" class="btn-tour" data-lang="es">Más Info</a>
-                    </div>
-                </div>
-                <div class="highlight-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Costa Brava Cove">
-                    <div class="highlight-info">
-                        <h3 data-lang="es">Kayak en Costa Brava</h3>
-                        <p data-lang="es">Explora las calas secretas de la Costa Brava en kayak, con paradas para nadar y disfrutar del paisaje.</p>
-                        <a href="#contact" class="btn-tour" data-lang="es">Más Info</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog" class="blog">
-        <div class="container">
-            <h2 data-lang="es">Blog de Viajes</h2>
-            <p class="section-subtitle" data-lang="es">Consejos, historias y guías para tu próxima aventura</p>
-            <div class="blog-grid">
-                <article class="blog-post">
-                    <img src="https://images.unsplash.com/photo-1579270912398-7d8e1ca845af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barrio Gótico">
-                    <div class="blog-content">
-                        <h3 data-lang="es">Secretos del Barrio Gótico</h3>
-                        <p data-lang="es">Descubre las leyendas y rincones ocultos de este barrio histórico en el corazón de Barcelona.</p>
-                        <a href="#" class="blog-link" data-lang="es">Leer Más</a>
-                    </div>
-                </article>
-                <article class="blog-post">
-                    <img src="https://images.unsplash.com/photo-1621352559979-525ab2e96e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dalí Museum">
-                    <div class="blog-content">
-                        <h3 data-lang="es">Un Día con Dalí</h3>
-                        <p data-lang="es">Todo lo que necesitas saber para planificar tu visita al mundo surrealista de Salvador Dalí.</p>
-                        <a href="#" class="blog-link" data-lang="es">Leer Más</a>
-                    </div>
-                </article>
-                <article class="blog-post">
-                    <img src="https://images.unsplash.com/photo-1596434719878-ba36ebde789f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Montserrat">
-                    <div class="blog-content">
-                        <h3 data-lang="es">Guía de Montserrat</h3>
-                        <p data-lang="es">Consejos para explorar la montaña sagrada y su monasterio, desde senderos hasta horarios del coro.</p>
-                        <a href="#" class="blog-link" data-lang="es">Leer Más</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section id="map" class="map-section">
-        <div class="container">
-            <h2 data-lang="es">Explora los Destinos</h2>
-            <p class="section-subtitle" data-lang="es">Un mapa interactivo de nuestros lugares favoritos</p>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95747.97335316177!2d2.070149865092469!3d41.39266790798967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a49816718e30e5%3A0x44b0fb3d4f47660a!2sBarcelona%2C%20Spain!5e0!3m2!1sen!2sus!4v1698765432100!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" aria-label="Mapa interactivo de destinos"></iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Travel Tips Section -->
-    <section id="travel-tips" class="travel-tips">
-        <div class="container">
-            <h2 data-lang="es">Consejos de Viaje</h2>
-            <p class="section-subtitle" data-lang="es">Prepárate para tu aventura en Cataluña</p>
-            <div class="tips-grid">
-                <div class="tip-card">
-                    <i class="fas fa-suitcase"></i>
-                    <h3 data-lang="es">Qué Empacar</h3>
-                    <p data-lang="es">Ropa cómoda, protector solar y calzado adecuado para caminatas son esenciales. ¡No olvides tu cámara!</p>
-                </div>
-                <div class="tip-card">
-                    <i class="fas fa-clock"></i>
-                    <h3 data-lang="es">Mejor Época</h3>
-                    <p data-lang="es">Primavera y otoño ofrecen clima ideal y menos turistas. Verano es perfecto para la Costa Brava.</p>
-                </div>
-                <div class="tip-card">
-                    <i class="fas fa-utensils"></i>
-                    <h3 data-lang="es">Comida Local</h3>
-                    <p data-lang="es">Prueba la paella, el pan con tomate y los calçots en temporada. Te recomendaré los mejores sitios.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <h2 data-lang="es">Servicios Adicionales</h2>
-            <p class="section-subtitle" data-lang="es">Personaliza tu experiencia con estas opciones</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1519451241324-20ff44c2ceff?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Transporte Privado">
-                    <h3 data-lang="es">Transporte Privado</h3>
-                    <p data-lang="es">Viaja cómodamente en un vehículo privado con conductor desde Barcelona a cualquier destino de tu tour.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1504672281656-e3e7b0e44f7e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Fotografía Profesional">
-                    <h3 data-lang="es">Fotografía Profesional</h3>
-                    <p data-lang="es">Captura tus recuerdos con un fotógrafo profesional durante el tour. Fotos editadas incluidas.</p>
-                </div>
-                <div class="service-card">
-                    <img src="https://images.unsplash.com/photo-1551524559-8af02e80d4c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Reservas Exclusivas">
-                    <h3 data-lang="es">Reservas Exclusivas</h3>
-                    <p data-lang="es">Acceso prioritario a monumentos y reservas en restaurantes locales seleccionados para tu grupo.</p>
-                </div>
-            </div>
-            <div class="services-cta">
-                <a href="#contact" class="btn" data-lang="es">Consulta Disponibilidad</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Me Section -->
-    <section id="why-choose-me" class="why-choose-me">
-        <div class="container">
-            <h2 data-lang="es">¿Por Qué Elegirme?</h2>
-            <p class="section-subtitle" data-lang="es">Razones para confiar en mí como tu guía en Cataluña</p>
-            <div class="reasons-grid">
-                <div class="reason-card">
-                    <i class="fas fa-certificate"></i>
-                    <h3 data-lang="es">Guía Licenciada</h3>
-                    <p data-lang="es">Acreditada por la Generalitat de Catalunya, con más de 10 años de experiencia profesional.</p>
-                </div>
-                <div class="reason-card">
-                    <i class="fas fa-user-friends"></i>
-                    <h3 data-lang="es">Grupos Pequeños</h3>
-                    <p data-lang="es">Tours íntimos para un máximo de 8 personas, garantizando atención personalizada.</p>
-                </div>
-                <div class="reason-card">
-                    <i class="fas fa-leaf"></i>
-                    <h3 data-lang="es">Turismo Sostenible</h3>
-                    <p data-lang="es">Compromiso con la preservación del patrimonio cultural y natural de la región.</p>
-                </div>
-                <div class="reason-card">
-                    <i class="fas fa-globe"></i>
-                    <h3 data-lang="es">Multilingüe</h3>
-                    <p data-lang="es">Tours en español e inglés, con un enfoque cercano y adaptado a tus necesidades.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Special Events Section -->
-    <section id="special-events" class="special-events">
-        <div class="container">
-            <h2 data-lang="es">Eventos Especiales</h2>
-            <p class="section-subtitle" data-lang="es">Tours temáticos para ocasiones únicas</p>
-            <div class="events-grid">
-                <div class="event-card">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tour Nocturno">
-                    <div class="event-info">
-                        <h3 data-lang="es">Tour Nocturno Costa Brava</h3>
-                        <p data-lang="es">Explora las calas iluminadas por la luna y disfruta de una cena al aire libre junto al mar.</p>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
-                    </div>
-                </div>
-                <div class="event-card">
-                    <img src="https://images.unsplash.com/photo-1562883782-40f58f6e13eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Gaudí al Anochecer">
-                    <div class="event-info">
-                        <h3 data-lang="es">Gaudí al Anochecer</h3>
-                        <p data-lang="es">Visita las obras de Gaudí bajo la luz mágica del atardecer, con acceso exclusivo a la Casa Batlló.</p>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
-                    </div>
-                </div>
-                <div class="event-card">
-                    <img src="https://images.unsplash.com/photo-1596434719878-ba36ebde789f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Montserrat Mística">
-                    <div class="event-info">
-                        <h3 data-lang="es">Montserrat Mística</h3>
-                        <p data-lang="es">Una experiencia espiritual con meditación guiada en la montaña y visita al monasterio al amanecer.</p>
-                        <a href="#contact" class="btn-tour" data-lang="es">Reservar</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Itineraries Section -->
-    <section id="itineraries" class="itineraries">
-        <div class="container">
-            <h2 data-lang="es">Itinerarios Detallados</h2>
-            <p class="section-subtitle" data-lang="es">Explora los planes de viaje paso a paso</p>
-            <div class="itinerary-grid">
-                <div class="itinerary-card">
-                    <h3 data-lang="es">Día en Barcelona Modernista</h3>
-                    <ul class="itinerary-list" data-lang="es">
-                        <li><strong>9:00 AM:</strong> Encuentro en Plaza Cataluña</li>
-                        <li><strong>9:30 AM:</strong> Visita guiada a la Sagrada Familia</li>
-                        <li><strong>12:00 PM:</strong> Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)</li>
-                        <li><strong>2:00 PM:</strong> Almuerzo libre en un restaurante recomendado</li>
-                        <li><strong>3:30 PM:</strong> Parc Güell con explicación histórica</li>
-                        <li><strong>5:30 PM:</strong> Fin del tour en el parque</li>
-                    </ul>
-                    <a href="#contact" class="btn-tour" data-lang="es">Reservar Este Tour</a>
-                </div>
-                <div class="itinerary-card">
-                    <h3 data-lang="es">Aventura en Costa Brava</h3>
-                    <ul class="itinerary-list" data-lang="es">
-                        <li><strong>8:00 AM:</strong> Salida desde Barcelona</li>
-                        <li><strong>9:30 AM:</strong> llegada a Tossa de Mar, visita al casco antiguo</li>
-                        <li><strong>12:00 PM:</strong> Cala Aiguablava: tiempo para nadar</li>
-                        <li><strong>2:00 PM:</strong> Almuerzo en un pueblo medieval (Pals)</li>
-                        <li><strong>4:00 PM:</strong> Paseo por Begur y sus vistas</li>
-                        <li><strong>6:00 PM:</strong> Regreso a Barcelona</li>
-                    </ul>
-                    <a href="#contact" class="btn-tour" data-lang="es">Reservar Este Tour</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Extended Gallery Section -->
-    <section id="extended-gallery" class="extended-gallery">
-        <div class="container">
-            <h2 data-lang="es">Galería Extendida</h2>
-            <p class="section-subtitle" data-lang="es">Más momentos capturados en nuestros tours</p>
-            <div class="gallery-grid-extended">
-                <div class="gallery-item-extended">
-                    <img src="https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Parc Güell">
-                    <div class="gallery-overlay">
-                        <p data-lang="es">Parc Güell, Barcelona</p>
-                    </div>
-                </div>
-                <div class="gallery-item-extended">
-                    <img src="https://images.unsplash.com/photo-1600585154983-7f3e5a2f3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tossa de Mar">
-                    <div class="gallery-overlay">
-                        <p data-lang="es">Tossa de Mar, Costa Brava</p>
-                    </div>
-                </div>
-                <div class="gallery-item-extended">
-                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cadaqués">
-                    <div class="gallery-overlay">
-                        <p data-lang="es">Cadaqués, Costa Brava</p>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -576,26 +290,6 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
-    <section id="certifications" class="certifications">
-        <div class="container">
-            <h2 data-lang="es">Certificaciones y Reconocimientos</h2>
-            <p class="section-subtitle" data-lang="es">Garantía de calidad y profesionalismo</p>
-            <div class="certifications-grid">
-                <div class="certification-card">
-                    <img src="https://images.unsplash.com/photo-1580582932707-520aed4e4027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Certificación Generalitat">
-                    <h3 data-lang="es">Guía Oficial de Cataluña</h3>
-                    <p data-lang="es">Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.</p>
-                </div>
-                <div class="certification-card">
-                    <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sostenibilidad">
-                    <h3 data-lang="es">Turismo Sostenible</h3>
-                    <p data-lang="es">Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -608,21 +302,21 @@
                     <h4 data-lang="es">Explora</h4>
                     <ul>
                         <li><a href="#tours" data-lang="es">Excursiones</a></li>
-                        <li><a href="#itineraries" data-lang="es">Itinerarios</a></li>
+                        <li><a href="#gallery" data-lang="es">Galería</a></li>
                         <li><a href="#booking" data-lang="es">Reservas</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4 data-lang="es">Sígueme</h4>
                     <div class="social-links">
-                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-lang="es">© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved.</p>
+                <p data-lang="es">© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -645,9 +339,8 @@
                 "Sobre Mí": "Sobre Mí",
                 "Excursiones": "Excursiones",
                 "Galería": "Galería",
-                "Testimonios": "Testimonios",
-                "FAQ": "FAQ",
                 "Contacto": "Contacto",
+                "Reservas": "Reservas",
                 "Explora Cataluña con una Guía Experta": "Explora Cataluña con una Guía Experta",
                 "Excursiones únicas por Barcelona y Costa Brava con Svetlana Savenko": "Excursiones únicas por Barcelona y Costa Brava con Svetlana Savenko",
                 "Descubre Nuestros Tours": "Descubre Nuestros Tours",
@@ -698,24 +391,6 @@
                 "Montserrat, Cataluña": "Montserrat, Cataluña",
                 "Teatro-Museo Dalí, Figueres": "Teatro-Museo Dalí, Figueres",
                 "Pals, Costa Brava": "Pals, Costa Brava",
-                "Lo Que Dicen Nuestros Viajeros": "Lo Que Dicen Nuestros Viajeros",
-                "\"Svetlana transformó nuestro viaje a Barcelona en algo especial. Su conocimiento sobre Gaudí y la historia de la ciudad es impresionante. ¡Recomiendo el tour modernista!\"": "\"Svetlana transformó nuestro viaje a Barcelona en algo especial. Su conocimiento sobre Gaudí y la historia de la ciudad es impresionante. ¡Recomiendo el tour modernista!\"",
-                "— Ana M., Sevilla": "— Ana M., Sevilla",
-                "\"La ruta por Costa Brava fue espectacular. Las calas, los pueblos y las historias que Svetlana compartió hicieron el día inolvidable.\"": "\"La ruta por Costa Brava fue espectacular. Las calas, los pueblos y las historias que Svetlana compartió hicieron el día inolvidable.\"",
-                "— Peter K., New York": "— Peter K., New York",
-                "\"El tour de Dalí con Svetlana fue una experiencia única. Su pasión por el arte y la cultura catalana es contagiosa.\"": "\"El tour de Dalí con Svetlana fue una experiencia única. Su pasión por el arte y la cultura catalana es contagiosa.\"",
-                "— Clara R., Buenos Aires": "— Clara R., Buenos Aires",
-                "Preguntas Frecuentes": "Preguntas Frecuentes",
-                "¿Qué incluye cada tour?": "¿Qué incluye cada tour?",
-                "Todos los tours incluyen una guía licenciada, transporte privado (si aplica), entradas a monumentos principales y recomendaciones personalizadas. No se incluyen comidas ni alojamiento, salvo que se indique lo contrario.": "Todos los tours incluyen una guía licenciada, transporte privado (si aplica), entradas a monumentos principales y recomendaciones personalizadas. No se incluyen comidas ni alojamiento, salvo que se indique lo contrario.",
-                "¿Puedo personalizar mi tour?": "¿Puedo personalizar mi tour?",
-                "¡Claro! Contacta conmigo para ajustar horarios, destinos o actividades según tus preferencias. Mi objetivo es ofrecerte una experiencia única y a medida.": "¡Claro! Contacta conmigo para ajustar horarios, destinos o actividades según tus preferencias. Mi objetivo es ofrecerte una experiencia única y a medida.",
-                "¿Son los tours aptos para todas las edades?": "¿Son los tours aptos para todas las edades?",
-                "Sí, adapto el ritmo y las actividades a las necesidades del grupo. Por favor, indícame cualquier requerimiento especial al reservar.": "Sí, adapto el ritmo y las actividades a las necesidades del grupo. Por favor, indícame cualquier requerimiento especial al reservar.",
-                "¿Cómo reservo un tour?": "¿Cómo reservo un tour?",
-                "Rellena el formulario de contacto con tus fechas y preferencias o envía un email a svetlana@barcelona-costabrava.com. Te responderé en menos de 24 horas.": "Rellena el formulario de contacto con tus fechas y preferencias o envía un email a svetlana@barcelona-costabrava.com. Te responderé en menos de 24 horas.",
-                "¿Qué pasa si llueve?": "¿Qué pasa si llueve?",
-                "Los tours se adaptan al clima. Si es necesario, modificamos el itinerario para aprovechar al máximo tu día, priorizando lugares cubiertos o actividades alternativas.": "Los tours se adaptan al clima. Si es necesario, modificamos el itinerario para aprovechar al máximo tu día, priorizando lugares cubiertos o actividades alternativas.",
                 "Información de Contacto": "Información de Contacto",
                 "Email:": "Email:",
                 "Teléfono:": "Teléfono:",
@@ -725,81 +400,6 @@
                 "Asunto": "Asunto",
                 "Mensaje": "Mensaje",
                 "Enviar Mensaje": "Enviar Mensaje",
-                "Destacados del Mes": "Destacados del Mes",
-                "Experiencias especiales seleccionadas para ti": "Experiencias especiales seleccionadas para ti",
-                "Atardecer en Barcelona": "Atardecer en Barcelona",
-                "Disfruta de una visita guiada al atardecer por los miradores más espectaculares de Barcelona, como el Bunkers del Carmel.": "Disfruta de una visita guiada al atardecer por los miradores más espectaculares de Barcelona, como el Bunkers del Carmel.",
-                "Kayak en Costa Brava": "Kayak en Costa Brava",
-                "Explora las calas secretas de la Costa Brava en kayak, con paradas para nadar y disfrutar del paisaje.": "Explora las calas secretas de la Costa Brava en kayak, con paradas para nadar y disfrutar del paisaje.",
-                "Más Info": "Más Info",
-                "Blog de Viajes": "Blog de Viajes",
-                "Consejos, historias y guías para tu próxima aventura": "Consejos, historias y guías para tu próxima aventura",
-                "Secretos del Barrio Gótico": "Secretos del Barrio Gótico",
-                "Descubre las leyendas y rincones ocultos de este barrio histórico en el corazón de Barcelona.": "Descubre las leyendas y rincones ocultos de este barrio histórico en el corazón de Barcelona.",
-                "Un Día con Dalí": "Un Día con Dalí",
-                "Todo lo que necesitas saber para planificar tu visita al mundo surrealista de Salvador Dalí.": "Todo lo que necesitas saber para planificar tu visita al mundo surrealista de Salvador Dalí.",
-                "Guía de Montserrat": "Guía de Montserrat",
-                "Consejos para explorar la montaña sagrada y su monasterio, desde senderos hasta horarios del coro.": "Consejos para explorar la montaña sagrada y su monasterio, desde senderos hasta horarios del coro.",
-                "Leer Más": "Leer Más",
-                "Explora los Destinos": "Explora los Destinos",
-                "Un mapa interactivo de nuestros lugares favoritos": "Un mapa interactivo de nuestros lugares favoritos",
-                "Consejos de Viaje": "Consejos de Viaje",
-                "Prepárate para tu aventura en Cataluña": "Prepárate para tu aventura en Cataluña",
-                "Qué Empacar": "Qué Empacar",
-                "Ropa cómoda, protector solar y calzado adecuado para caminatas son esenciales. ¡No olvides tu cámara!": "Ropa cómoda, protector solar y calzado adecuado para caminatas son esenciales. ¡No olvides tu cámara!",
-                "Mejor Época": "Mejor Época",
-                "Primavera y otoño ofrecen clima ideal y menos turistas. Verano es perfecto para la Costa Brava.": "Primavera y otoño ofrecen clima ideal y menos turistas. Verano es perfecto para la Costa Brava.",
-                "Comida Local": "Comida Local",
-                "Prueba la paella, el pan con tomate y los calçots en temporada. Te recomendaré los mejores sitios.": "Prueba la paella, el pan con tomate y los calçots en temporada. Te recomendaré los mejores sitios.",
-                "Servicios Adicionales": "Servicios Adicionales",
-                "Personaliza tu experiencia con estas opciones": "Personaliza tu experiencia con estas opciones",
-                "Transporte Privado": "Transporte Privado",
-                "Viaja cómodamente en un vehículo privado con conductor desde Barcelona a cualquier destino de tu tour.": "Viaja cómodamente en un vehículo privado con conductor desde Barcelona a cualquier destino de tu tour.",
-                "Fotografía Profesional": "Fotografía Profesional",
-                "Captura tus recuerdos con un fotógrafo profesional durante el tour. Fotos editadas incluidas.": "Captura tus recuerdos con un fotógrafo profesional durante el tour. Fotos editadas incluidas.",
-                "Reservas Exclusivas": "Reservas Exclusivas",
-                "Acceso prioritario a monumentos y reservas en restaurantes locales seleccionados para tu grupo.": "Acceso prioritario a monumentos y reservas en restaurantes locales seleccionados para tu grupo.",
-                "Consulta Disponibilidad": "Consulta Disponibilidad",
-                "¿Por Qué Elegirme?": "¿Por Qué Elegirme?",
-                "Razones para confiar en mí como tu guía en Cataluña": "Razones para confiar en mí como tu guía en Cataluña",
-                "Guía Licenciada": "Guía Licenciada",
-                "Acreditada por la Generalitat de Catalunya, con más de 10 años de experiencia profesional.": "Acreditada por la Generalitat de Catalunya, con más de 10 años de experiencia profesional.",
-                "Grupos Pequeños": "Grupos Pequeños",
-                "Tours íntimos para un máximo de 8 personas, garantizando atención personalizada.": "Tours íntimos para un máximo de 8 personas, garantizando atención personalizada.",
-                "Turismo Sostenible": "Turismo Sostenible",
-                "Compromiso con la preservación del patrimonio cultural y natural de la región.": "Compromiso con la preservación del patrimonio cultural y natural de la región.",
-                "Multilingüe": "Multilingüe",
-                "Tours en español e inglés, con un enfoque cercano y adaptado a tus necesidades.": "Tours en español e inglés, con un enfoque cercano y adaptado a tus necesidades.",
-                "Eventos Especiales": "Eventos Especiales",
-                "Tours temáticos para ocasiones únicas": "Tours temáticos para ocasiones únicas",
-                "Tour Nocturno Costa Brava": "Tour Nocturno Costa Brava",
-                "Explora las calas iluminadas por la luna y disfruta de una cena al aire libre junto al mar.": "Explora las calas iluminadas por la luna y disfruta de una cena al aire libre junto al mar.",
-                "Gaudí al Anochecer": "Gaudí al Anochecer",
-                "Visita las obras de Gaudí bajo la luz mágica del atardecer, con acceso exclusivo a la Casa Batlló.": "Visita las obras de Gaudí bajo la luz mágica del atardecer, con acceso exclusivo a la Casa Batlló.",
-                "Montserrat Mística": "Montserrat Mística",
-                "Una experiencia espiritual con meditación guiada en la montaña y visita al monasterio al amanecer.": "Una experiencia espiritual con meditación guiada en la montaña y visita al monasterio al amanecer.",
-                "Itinerarios Detallados": "Itinerarios Detallados",
-                "Explora los planes de viaje paso a paso": "Explora los planes de viaje paso a paso",
-                "Día en Barcelona Modernista": "Día en Barcelona Modernista",
-                "9:00 AM: Encuentro en Plaza Cataluña": "9:00 AM: Encuentro en Plaza Cataluña",
-                "9:30 AM: Visita guiada a la Sagrada Familia": "9:30 AM: Visita guiada a la Sagrada Familia",
-                "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)": "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)",
-                "2:00 PM: Almuerzo libre en un restaurante recomendado": "2:00 PM: Almuerzo libre en un restaurante recomendado",
-                "3:30 PM: Parc Güell con explicación histórica": "3:30 PM: Parc Güell con explicación histórica",
-                "5:30 PM: Fin del tour en el parque": "5:30 PM: Fin del tour en el parque",
-                "Aventura en Costa Brava": "Aventura en Costa Brava",
-                "8:00 AM: Salida desde Barcelona": "8:00 AM: Salida desde Barcelona",
-                "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo": "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo",
-                "12:00 PM: Cala Aiguablava: tiempo para nadar": "12:00 PM: Cala Aiguablava: tiempo para nadar",
-                "2:00 PM: Almuerzo en un pueblo medieval (Pals)": "2:00 PM: Almuerzo en un pueblo medieval (Pals)",
-                "4:00 PM: Paseo por Begur y sus vistas": "4:00 PM: Paseo por Begur y sus vistas",
-                "6:00 PM: Regreso a Barcelona": "6:00 PM: Regreso a Barcelona",
-                "Reservar Este Tour": "Reservar Este Tour",
-                "Galería Extendida": "Galería Extendida",
-                "Más momentos capturados en nuestros tours": "Más momentos capturados en nuestros tours",
-                "Parc Güell, Barcelona": "Parc Güell, Barcelona",
-                "Tossa de Mar, Costa Brava": "Tossa de Mar, Costa Brava",
-                "Cadaqués, Costa Brava": "Cadaqués, Costa Brava",
                 "Reservas en Línea": "Reservas en Línea",
                 "Planifica tu tour fácilmente": "Planifica tu tour fácilmente",
                 "Selecciona tu Tour:": "Selecciona tu Tour:",
@@ -807,25 +407,18 @@
                 "Número de Participantes:": "Número de Participantes:",
                 "Comentarios Adicionales": "Comentarios Adicionales",
                 "Enviar Solicitud": "Enviar Solicitud",
-                "Certificaciones y Reconocimientos": "Certificaciones y Reconocimientos",
-                "Garantía de calidad y profesionalismo": "Garantía de calidad y profesionalismo",
-                "Guía Oficial de Cataluña": "Guía Oficial de Cataluña",
-                "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.": "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.",
-                "Turismo Sostenible": "Turismo Sostenible",
-                "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.": "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.",
                 "Explora": "Explora",
                 "Excursiones únicas con Svetlana Savenko": "Excursiones únicas con Svetlana Savenko",
                 "Más de 10 años guiando viajeros": "Más de 10 años guiando viajeros",
-                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados."
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados."
             },
             en: {
                 "Inicio": "Home",
                 "Sobre Mí": "About Me",
                 "Excursiones": "Tours",
                 "Galería": "Gallery",
-                "Testimonios": "Testimonials",
-                "FAQ": "FAQ",
                 "Contacto": "Contact",
+                "Reservas": "Booking",
                 "Explora Cataluña con una Guía Experta": "Explore Catalonia with an Expert Guide",
                 "Excursiones únicas por Barcelona y Costa Brava con Svetlana Savenko": "Unique tours in Barcelona and Costa Brava with Svetlana Savenko",
                 "Descubre Nuestros Tours": "Discover Our Tours",
@@ -876,24 +469,6 @@
                 "Montserrat, Cataluña": "Montserrat, Catalonia",
                 "Teatro-Museo Dalí, Figueres": "Dalí Theatre-Museum, Figueres",
                 "Pals, Costa Brava": "Pals, Costa Brava",
-                "Lo Que Dicen Nuestros Viajeros": "What Our Travelers Say",
-                "\"Svetlana transformó nuestro viaje a Barcelona en algo especial. Su conocimiento sobre Gaudí y la historia de la ciudad es impresionante. ¡Recomiendo el tour modernista!\"": "\"Svetlana turned our Barcelona trip into something special. Her knowledge of Gaudí and the city’s history is impressive. I recommend the modernist tour!\"",
-                "— Ana M., Sevilla": "— Ana M., Sevilla",
-                "\"La ruta por Costa Brava fue espectacular. Las calas, los pueblos y las historias que Svetlana compartió hicieron el día inolvidable.\"": "\"The Costa Brava route was spectacular. The coves, villages, and stories Svetlana shared made the day unforgettable.\"",
-                "— Peter K., New York": "— Peter K., New York",
-                "\"El tour de Dalí con Svetlana fue una experiencia única. Su pasión por el arte y la cultura catalana es contagiosa.\"": "\"The Dalí tour with Svetlana was a unique experience. Her passion for art and Catalan culture is contagious.\"",
-                "— Clara R., Buenos Aires": "— Clara R., Buenos Aires",
-                "Preguntas Frecuentes": "Frequently Asked Questions",
-                "¿Qué incluye cada tour?": "What does each tour include?",
-                "Todos los tours incluyen una guía licenciada, transporte privado (si aplica), entradas a monumentos principales y recomendaciones personalizadas. No se incluyen comidas ni alojamiento, salvo que se indique lo contrario.": "All tours include a licensed guide, private transportation (if applicable), tickets to main monuments, and personalized recommendations. Meals and accommodation are not included unless specified.",
-                "¿Puedo personalizar mi tour?": "Can I customize my tour?",
-                "¡Claro! Contacta conmigo para ajustar horarios, destinos o actividades según tus preferencias. Mi objetivo es ofrecerte una experiencia única y a medida.": "Of course! Contact me to adjust schedules, destinations, or activities to your preferences. My goal is to offer you a unique, tailored experience.",
-                "¿Son los tours aptos para todas las edades?": "Are the tours suitable for all ages?",
-                "Sí, adapto el ritmo y las actividades a las necesidades del grupo. Por favor, indícame cualquier requerimiento especial al reservar.": "Yes, I adapt the pace and activities to the group’s needs. Please let me know any special requirements when booking.",
-                "¿Cómo reservo un tour?": "How do I book a tour?",
-                "Rellena el formulario de contacto con tus fechas y preferencias o envía un email a svetlana@barcelona-costabrava.com. Te responderé en menos de 24 horas.": "Fill out the contact form with your dates and preferences or email svetlana@barcelona-costabrava.com. I’ll reply within 24 hours.",
-                "¿Qué pasa si llueve?": "What happens if it rains?",
-                "Los tours se adaptan al clima. Si es necesario, modificamos el itinerario para aprovechar al máximo tu día, priorizando lugares cubiertos o actividades alternativas.": "Tours adapt to the weather. If needed, we adjust the itinerary to make the most of your day, prioritizing covered places or alternative activities.",
                 "Información de Contacto": "Contact Information",
                 "Email:": "Email:",
                 "Teléfono:": "Phone:",
@@ -903,81 +478,6 @@
                 "Asunto": "Subject",
                 "Mensaje": "Message",
                 "Enviar Mensaje": "Send Message",
-                "Destacados del Mes": "Highlights of the Month",
-                "Experiencias especiales seleccionadas para ti": "Special experiences selected for you",
-                "Atardecer en Barcelona": "Sunset in Barcelona",
-                "Disfruta de una visita guiada al atardecer por los miradores más espectaculares de Barcelona, como el Bunkers del Carmel.": "Enjoy a guided sunset tour of Barcelona’s most spectacular viewpoints, like Bunkers del Carmel.",
-                "Kayak en Costa Brava": "Kayaking in Costa Brava",
-                "Explora las calas secretas de la Costa Brava en kayak, con paradas para nadar y disfrutar del paisaje.": "Explore Costa Brava’s secret coves by kayak, with stops to swim and enjoy the scenery.",
-                "Más Info": "More Info",
-                "Blog de Viajes": "Travel Blog",
-                "Consejos, historias y guías para tu próxima aventura": "Tips, stories, and guides for your next adventure",
-                "Secretos del Barrio Gótico": "Secrets of the Gothic Quarter",
-                "Descubre las leyendas y rincones ocultos de este barrio histórico en el corazón de Barcelona.": "Discover the legends and hidden corners of this historic neighborhood in the heart of Barcelona.",
-                "Un Día con Dalí": "A Day with Dalí",
-                "Todo lo que necesitas saber para planificar tu visita al mundo surrealista de Salvador Dalí.": "Everything you need to know to plan your visit to Salvador Dalí’s surreal world.",
-                "Guía de Montserrat": "Montserrat Guide",
-                "Consejos para explorar la montaña sagrada y su monasterio, desde senderos hasta horarios del coro.": "Tips for exploring the sacred mountain and its monastery, from trails to choir schedules.",
-                "Leer Más": "Read More",
-                "Explora los Destinos": "Explore the Destinations",
-                "Un mapa interactivo de nuestros lugares favoritos": "An interactive map of our favorite places",
-                "Consejos de Viaje": "Travel Tips",
-                "Prepárate para tu aventura en Cataluña": "Prepare for your adventure in Catalonia",
-                "Qué Empacar": "What to Pack",
-                "Ropa cómoda, protector solar y calzado adecuado para caminatas son esenciales. ¡No olvides tu cámara!": "Comfortable clothing, sunscreen, and proper walking shoes are essential. Don’t forget your camera!",
-                "Mejor Época": "Best Time",
-                "Primavera y otoño ofrecen clima ideal y menos turistas. Verano es perfecto para la Costa Brava.": "Spring and fall offer ideal weather and fewer tourists. Summer is perfect for Costa Brava.",
-                "Comida Local": "Local Food",
-                "Prueba la paella, el pan con tomate y los calçots en temporada. Te recomendaré los mejores sitios.": "Try paella, tomato bread, and seasonal calçots. I’ll recommend the best spots.",
-                "Servicios Adicionales": "Additional Services",
-                "Personaliza tu experiencia con estas opciones": "Customize your experience with these options",
-                "Transporte Privado": "Private Transportation",
-                "Viaja cómodamente en un vehículo privado con conductor desde Barcelona a cualquier destino de tu tour.": "Travel comfortably in a private vehicle with a driver from Barcelona to any tour destination.",
-                "Fotografía Profesional": "Professional Photography",
-                "Captura tus recuerdos con un fotógrafo profesional durante el tour. Fotos editadas incluidas.": "Capture your memories with a professional photographer during the tour. Edited photos included.",
-                "Reservas Exclusivas": "Exclusive Reservations",
-                "Acceso prioritario a monumentos y reservas en restaurantes locales seleccionados para tu grupo.": "Priority access to monuments and reservations at selected local restaurants for your group.",
-                "Consulta Disponibilidad": "Check Availability",
-                "¿Por Qué Elegirme?": "Why Choose Me?",
-                "Razones para confiar en mí como tu guía en Cataluña": "Reasons to trust me as your guide in Catalonia",
-                "Guía Licenciada": "Licensed Guide",
-                "Acreditada por la Generalitat de Catalunya, con más de 10 años de experiencia profesional.": "Accredited by the Generalitat de Catalunya, with over 10 years of professional experience.",
-                "Grupos Pequeños": "Small Groups",
-                "Tours íntimos para un máximo de 8 personas, garantizando atención personalizada.": "Intimate tours for a maximum of 8 people, ensuring personalized attention.",
-                "Turismo Sostenible": "Sustainable Tourism",
-                "Compromiso con la preservación del patrimonio cultural y natural de la región.": "Commitment to preserving the region’s cultural and natural heritage.",
-                "Multilingüe": "Multilingual",
-                "Tours en español e inglés, con un enfoque cercano y adaptado a tus necesidades.": "Tours in Spanish and English, with a friendly and tailored approach.",
-                "Eventos Especiales": "Special Events",
-                "Tours temáticos para ocasiones únicas": "Themed tours for unique occasions",
-                "Tour Nocturno Costa Brava": "Costa Brava Night Tour",
-                "Explora las calas iluminadas por la luna y disfruta de una cena al aire libre junto al mar.": "Explore moonlit coves and enjoy an outdoor dinner by the sea.",
-                "Gaudí al Anochecer": "Gaudí at Dusk",
-                "Visita las obras de Gaudí bajo la luz mágica del atardecer, con acceso exclusivo a la Casa Batlló.": "Visit Gaudí’s works under the magical dusk light, with exclusive access to Casa Batlló.",
-                "Montserrat Mística": "Mystical Montserrat",
-                "Una experiencia espiritual con meditación guiada en la montaña y visita al monasterio al amanecer.": "A spiritual experience with guided meditation on the mountain and a sunrise monastery visit.",
-                "Itinerarios Detallados": "Detailed Itineraries",
-                "Explora los planes de viaje paso a paso": "Explore travel plans step by step",
-                "Día en Barcelona Modernista": "Day in Modernist Barcelona",
-                "9:00 AM: Encuentro en Plaza Cataluña": "9:00 AM: Meeting at Plaza Cataluña",
-                "9:30 AM: Visita guiada a la Sagrada Familia": "9:30 AM: Guided visit to Sagrada Familia",
-                "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)": "12:00 PM: Walk along Passeig de Gràcia (Casa Batlló and Casa Milà)",
-                "2:00 PM: Almuerzo libre en un restaurante recomendado": "2:00 PM: Free lunch at a recommended restaurant",
-                "3:30 PM: Parc Güell con explicación histórica": "3:30 PM: Parc Güell with historical explanation",
-                "5:30 PM: Fin del tour en el parque": "5:30 PM: Tour ends at the park",
-                "Aventura en Costa Brava": "Costa Brava Adventure",
-                "8:00 AM: Salida desde Barcelona": "8:00 AM: Departure from Barcelona",
-                "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo": "9:30 AM: Arrival at Tossa de Mar, visit to the old town",
-                "12:00 PM: Cala Aiguablava: tiempo para nadar": "12:00 PM: Cala Aiguablava: time to swim",
-                "2:00 PM: Almuerzo en un pueblo medieval (Pals)": "2:00 PM: Lunch in a medieval village (Pals)",
-                "4:00 PM: Paseo por Begur y sus vistas": "4:00 PM: Walk through Begur and its views",
-                "6:00 PM: Regreso a Barcelona": "6:00 PM: Return to Barcelona",
-                "Reservar Este Tour": "Book This Tour",
-                "Galería Extendida": "Extended Gallery",
-                "Más momentos capturados en nuestros tours": "More moments captured on our tours",
-                "Parc Güell, Barcelona": "Parc Güell, Barcelona",
-                "Tossa de Mar, Costa Brava": "Tossa de Mar, Costa Brava",
-                "Cadaqués, Costa Brava": "Cadaqués, Costa Brava",
                 "Reservas en Línea": "Online Booking",
                 "Planifica tu tour fácilmente": "Plan your tour easily",
                 "Selecciona tu Tour:": "Select Your Tour:",
@@ -985,16 +485,10 @@
                 "Número de Participantes:": "Number of Participants:",
                 "Comentarios Adicionales": "Additional Comments",
                 "Enviar Solicitud": "Submit Request",
-                "Certificaciones y Reconocimientos": "Certifications and Recognitions",
-                "Garantía de calidad y profesionalismo": "Guarantee of quality and professionalism",
-                "Guía Oficial de Cataluña": "Official Guide of Catalonia",
-                "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.": "Accredited by the Generalitat de Catalunya since 2012, ensuring top-quality service.",
-                "Turismo Sostenible": "Sustainable Tourism",
-                "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.": "Commitment to responsible practices, recognized by local tourism associations.",
                 "Explora": "Explore",
                 "Excursiones únicas con Svetlana Savenko": "Unique tours with Svetlana Savenko",
                 "Más de 10 años guiando viajeros": "Over 10 years guiding travelers",
-                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved."
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved."
             }
         };
 
@@ -1011,7 +505,7 @@
             });
         });
 
-        // Carga inicial del idioma
+        // Carga inicial del idioma y animación de entrada
         window.addEventListener('load', () => {
             const lang = document.getElementById('language').value;
             document.querySelectorAll('[data-lang]').forEach(element => {
@@ -1022,6 +516,12 @@
                 const placeholderKey = element.getAttribute('placeholder');
                 element.setAttribute('placeholder', translations[lang][placeholderKey] || placeholderKey);
             });
+
+            // Animación de entrada simple (solo CSS)
+            const introOverlay = document.querySelector('.intro-overlay');
+            setTimeout(() => {
+                introOverlay.classList.add('fade-out');
+            }, 3000); // Duración de 3 segundos antes de desvanecerse
         });
 
         // Menú móvil
@@ -1067,40 +567,6 @@
             showSlide(currentSlide);
         }, 5000);
 
-        // Testimonial Slider
-        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
-        const dots = document.querySelectorAll('.slider-dots .dot');
-        let currentTestimonial = 0;
-
-        function showTestimonial(index) {
-            testimonialSlides.forEach((slide, i) => {
-                slide.classList.toggle('active', i === index);
-            });
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentTestimonial = index;
-                showTestimonial(currentTestimonial);
-            });
-        });
-
-        setInterval(() => {
-            currentTestimonial = (currentTestimonial + 1) % testimonialSlides.length;
-            showTestimonial(currentTestimonial);
-        }, 7000);
-
-        // FAQ Accordion
-        document.querySelectorAll('.faq-item h3').forEach(item => {
-            item.addEventListener('click', () => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
-            });
-        });
-
         // Resaltar enlace activo según sección visible
         window.addEventListener('scroll', () => {
             const sections = document.querySelectorAll('section');
@@ -1119,22 +585,6 @@
                 }
             });
         });
-
-        // Actualizar navegación con nuevas secciones
-        const navLinksContainer = document.querySelector('.nav-links');
-        navLinksContainer.insertAdjacentHTML('beforeend', `
-            <li><a href="#highlights" data-lang="es" aria-label="Destacados del Mes">Destacados</a></li>
-            <li><a href="#blog" data-lang="es" aria-label="Blog de Viajes">Blog</a></li>
-            <li><a href="#map" data-lang="es" aria-label="Mapa">Mapa</a></li>
-            <li><a href="#travel-tips" data-lang="es" aria-label="Consejos de Viaje">Consejos</a></li>
-            <li><a href="#services" data-lang="es" aria-label="Servicios">Servicios</a></li>
-            <li><a href="#why-choose-me" data-lang="es" aria-label="Por Qué Elegirme">Por Qué Elegirme</a></li>
-            <li><a href="#special-events" data-lang="es" aria-label="Eventos Especiales">Eventos</a></li>
-            <li><a href="#itineraries" data-lang="es" aria-label="Itinerarios">Itinerarios</a></li>
-            <li><a href="#extended-gallery" data-lang="es" aria-label="Galería Extendida">Galería Extendida</a></li>
-            <li><a href="#booking" data-lang="es" aria-label="Reservas">Reservas</a></li>
-            <li><a href="#certifications" data-lang="es" aria-label="Certificaciones">Certificaciones</a></li>
-        `);
     </script>
 </body>
 </html>
