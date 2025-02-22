@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcelona & Costa Brava Tours</title>
+    <title>Barcelona & Costa Brava Tours - Guía Licenciada</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
             <div class="logo">Barcelona & Costa Brava</div>
             <ul class="nav-links">
                 <li><a href="#home" data-lang="es">Inicio</a></li>
-                <li><a href="#tours" data-lang="es">Tours</a></li>
+                <li><a href="#tours" data-lang="es">Excursiones</a></li>
                 <li><a href="#contact" data-lang="es">Contacto</a></li>
                 <li class="lang-switcher">
                     <select id="language">
@@ -26,74 +26,98 @@
     </header>
 
     <section id="hero">
-        <h1 data-lang="es">Descubre Barcelona y la Costa Brava</h1>
-        <p data-lang="es">Explora lo mejor de Cataluña con nuestros tours personalizados.</p>
+        <h1 data-lang="es">Explora Barcelona y Costa Brava con una Guía Licenciada</h1>
+        <p data-lang="es">Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.</p>
         <button data-lang="es">Reserva Ahora</button>
+        <img src="images/barcelona-hero.jpg" alt="Vista de Barcelona" class="hero-image">
     </section>
 
     <section id="tours">
-        <h2 data-lang="es">Nuestros Tours</h2>
+        <h2 data-lang="es">Nuestras Excursiones</h2>
         <div class="tour-grid">
             <div class="tour-card">
-                <img src="https://via.placeholder.com/300x200" alt="Tour Image">
-                <h3 data-lang="es">Barcelona Clásica</h3>
-                <p data-lang="es">Descubre la Sagrada Familia, el Barrio Gótico y más.</p>
+                <img src="images/sagrada-familia.jpg" alt="Sagrada Familia">
+                <h3 data-lang="es">Barcelona Histórica</h3>
+                <p data-lang="es">Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.</p>
             </div>
             <div class="tour-card">
-                <img src="https://via.placeholder.com/300x200" alt="Tour Image">
-                <h3 data-lang="es">Costa Brava</h3>
-                <p data-lang="es">Playas cristalinas y pueblos medievales.</p>
+                <img src="images/costa-brava-cove.jpg" alt="Cala en Costa Brava">
+                <h3 data-lang="es">Costa Brava Natural</h3>
+                <p data-lang="es">Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.</p>
+            </div>
+            <div class="tour-card">
+                <img src="images/dali-museum.jpg" alt="Museo Dalí">
+                <h3 data-lang="es">Ruta Dalí</h3>
+                <p data-lang="es">Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.</p>
             </div>
         </div>
     </section>
 
+    <section id="about">
+        <h2 data-lang="es">Sobre Mí</h2>
+        <p data-lang="es">Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.</p>
+        <img src="images/svetlana-guide.jpg" alt="Svetlana Savenko, Guía" class="about-image">
+    </section>
+
     <footer>
-        <p data-lang="es">© 2025 Barcelona & Costa Brava Tours</p>
+        <p data-lang="es">© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko</p>
     </footer>
 
     <script>
         const translations = {
             es: {
                 "Inicio": "Inicio",
-                "Tours": "Tours",
+                "Excursiones": "Excursiones",
                 "Contacto": "Contacto",
-                "Descubre Barcelona y la Costa Brava": "Descubre Barcelona y la Costa Brava",
-                "Explora lo mejor de Cataluña con nuestros tours personalizados.": "Explora lo mejor de Cataluña con nuestros tours personalizados.",
+                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Explora Barcelona y Costa Brava con una Guía Licenciada",
+                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.",
                 "Reserva Ahora": "Reserva Ahora",
-                "Nuestros Tours": "Nuestros Tours",
-                "Barcelona Clásica": "Barcelona Clásica",
-                "Descubre la Sagrada Familia, el Barrio Gótico y más.": "Descubre la Sagrada Familia, el Barrio Gótico y más.",
-                "Costa Brava": "Costa Brava",
-                "Playas cristalinas y pueblos medievales.": "Playas cristalinas y pueblos medievales.",
-                "© 2025 Barcelona & Costa Brava Tours": "© 2025 Barcelona & Costa Brava Tours"
+                "Nuestras Excursiones": "Nuestras Excursiones",
+                "Barcelona Histórica": "Barcelona Histórica",
+                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.",
+                "Costa Brava Natural": "Costa Brava Natural",
+                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.",
+                "Ruta Dalí": "Ruta Dalí",
+                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.",
+                "Sobre Mí": "Sobre Mí",
+                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.",
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko"
             },
             en: {
                 "Inicio": "Home",
-                "Tours": "Tours",
+                "Excursiones": "Tours",
                 "Contacto": "Contact",
-                "Descubre Barcelona y la Costa Brava": "Discover Barcelona & Costa Brava",
-                "Explora lo mejor de Cataluña con nuestros tours personalizados.": "Explore the best of Catalonia with our personalized tours.",
+                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Explore Barcelona & Costa Brava with a Licensed Guide",
+                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Personalized tours in Catalonia with Svetlana Savenko, an official guide with years of experience.",
                 "Reserva Ahora": "Book Now",
-                "Nuestros Tours": "Our Tours",
-                "Barcelona Clásica": "Classic Barcelona",
-                "Descubre la Sagrada Familia, el Barrio Gótico y más.": "Discover Sagrada Familia, Gothic Quarter, and more.",
-                "Costa Brava": "Costa Brava",
-                "Playas cristalinas y pueblos medievales.": "Crystal-clear beaches and medieval villages.",
-                "© 2025 Barcelona & Costa Brava Tours": "© 2025 Barcelona & Costa Brava Tours"
+                "Nuestras Excursiones": "Our Tours",
+                "Barcelona Histórica": "Historic Barcelona",
+                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Explore the Gothic Quarter, Sagrada Familia, and the medieval secrets of the city.",
+                "Costa Brava Natural": "Natural Costa Brava",
+                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Discover hidden coves, medieval villages, and nature trails.",
+                "Ruta Dalí": "Dalí Route",
+                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Visit the Dalí Museum in Figueres and his home in Port Lligat, a journey into surrealism.",
+                "Sobre Mí": "About Me",
+                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "I am Svetlana Savenko, a licensed guide in Catalonia with a passion for history, culture, and nature. I offer unique tours tailored to your interests, from long hikes to cultural routes in Barcelona and Costa Brava.",
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko"
             },
             ru: {
                 "Inicio": "Главная",
-                "Tours": "Туры",
+                "Excursiones": "Экскурсии",
                 "Contacto": "Контакты",
-                "Descubre Barcelona y la Costa Brava": "Откройте для себя Барселону и Коста-Браву",
-                "Explora lo mejor de Cataluña con nuestros tours personalizados.": "Исследуйте лучшее в Каталонии с нашими индивидуальными турами.",
+                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Исследуйте Барселону и Коста-Браву с лицензированным гидом",
+                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Персонализированные экскурсии по Каталонии с Светланой Савенко, официальным гидом с многолетним опытом.",
                 "Reserva Ahora": "Забронировать",
-                "Nuestros Tours": "Наши туры",
-                "Barcelona Clásica": "Классическая Барселона",
-                "Descubre la Sagrada Familia, el Barrio Gótico y más.": "Откройте для себя Саграда Фамилия, Готический квартал и многое другое.",
-                "Costa Brava": "Коста-Брава",
-                "Playas cristalinas y pueblos medievales.": "Кристально чистые пляжи и средневековые деревни.",
-                "© 2025 Barcelona & Costa Brava Tours": "© 2025 Туры по Барселоне и Коста-Браве"
+                "Nuestras Excursiones": "Наши экскурсии",
+                "Barcelona Histórica": "Историческая Барселона",
+                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Прогуляйтесь по Готическому кварталу, Саграда Фамилии и откройте средневековые тайны города.",
+                "Costa Brava Natural": "Природная Коста-Брава",
+                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Откройте скрытые бухты, средневековые деревни и маршруты по природе.",
+                "Ruta Dalí": "Маршрут Дали",
+                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Посетите музей Дали в Фигерасе и его дом в Порт-Льигате, путешествие в сюрреализм.",
+                "Sobre Mí": "Обо мне",
+                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "Я Светлана Савенко, лицензированный гид в Каталонии с любовью к истории, культуре и природе. Предлагаю уникальные экскурсии, адаптированные под ваши интересы, от долгих прогулок до культурных маршрутов в Барселоне и на Коста-Браве.",
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Туры по Барселоне и Коста-Браве - Светлана Савенко"
             }
         };
 
@@ -105,7 +129,5 @@
             });
         });
     </script>
-</body>
-</html>
 </body>
 </html>
