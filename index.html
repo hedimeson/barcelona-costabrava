@@ -3,182 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcelona y Costa Brava</title>
+    <title>Barcelona Costa Brava Tours</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- Barra de navegación -->
     <header>
+        <h1>Barcelona Costa Brava Tours</h1>
         <nav>
             <ul>
-                <li><a href="#inicio" class="espanol">Inicio</a></li>
-                <li><a href="#inicio-en" class="ingles">Home</a></li>
-                <li><a href="#tours" class="espanol">Tours</a></li>
-                <li><a href="#tours-en" class="ingles">Tours</a></li>
-                <li><a href="#testimonios" class="espanol">Testimonios</a></li>
-                <li><a href="#testimonios-en" class="ingles">Testimonials</a></li>
-                <li><a href="#contacto" class="espanol">Contacto</a></li>
-                <li><a href="#contacto-en" class="ingles">Contact</a></li>
+                <li><a href="#bienvenida">Bienvenida</a></li>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Sección de Bienvenida -->
+    <section class="bienvenida" id="bienvenida">
+        <h1>Welcome to Barcelona Costa Brava</h1>
+        <p>Discover the best tours in Barcelona and the Costa Brava region.</p>
+        <img src="https://raw.githubusercontent.com/hedimeson/barcelona-costabrava/main/images/bienvenida.jpg" alt="Welcome Image">
+        <a href="#tours" class="btn">Book Now</a>
+    </section>
+
+    <!-- Sección de Tours -->
+    <section id="tours">
+        <h2>Our Tours</h2>
+
+        <div class="tour">
+            <img src="https://raw.githubusercontent.com/hedimeson/barcelona-costabrava/main/images/tour1.jpg" alt="Tour 1">
+            <h3>Tour a la Sagrada Familia</h3>
+            <p>Un tour inolvidable por uno de los monumentos más icónicos de Barcelona.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="tour">
+            <img src="https://raw.githubusercontent.com/hedimeson/barcelona-costabrava/main/images/tour2.jpg" alt="Tour 2">
+            <h3>Tour por el Parque Güell</h3>
+            <p>Explora el colorido y famoso parque diseñado por Gaudí.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <!-- Agrega más tours según sea necesario -->
+    </section>
+
+    <!-- Sección de Testimonios -->
+    <section id="testimonios">
+        <h2>What Our Customers Say</h2>
+
+        <div class="testimonio">
+            <p>"Our tour was amazing! The guide was very knowledgeable and the sights were beautiful."</p>
+            <strong>John Doe</strong>
+        </div>
+
+        <div class="testimonio">
+            <p>"We had a wonderful experience. Highly recommend the Sagrada Familia tour!"</p>
+            <strong>Jane Smith</strong>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto">
+        <h2>Contact Us</h2>
+        <form action="#" method="POST">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
     <!-- Selector de idioma -->
     <div class="selector-idioma">
-        <button onclick="cambiarIdioma('es')">Español</button>
-        <button onclick="cambiarIdioma('en')">English</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
     </div>
 
-    <!-- Sección de bienvenida (Español) -->
-    <section id="inicio">
-        <div class="bienvenida">
-            <h1>Descubre Barcelona y la Costa Brava</h1>
-            <p>Disfruta de un viaje inolvidable explorando los mejores destinos turísticos de Barcelona y la Costa Brava.</p>
-            <a href="#tours" class="btn">Explorar Tours</a>
-        </div>
-    </section>
-
-    <!-- Sección de bienvenida (Inglés) -->
-    <section id="inicio-en" style="display:none;">
-        <div class="bienvenida">
-            <h1>Discover Barcelona and Costa Brava</h1>
-            <p>Enjoy an unforgettable journey exploring the best tourist destinations in Barcelona and Costa Brava.</p>
-            <a href="#tours-en" class="btn">Explore Tours</a>
-        </div>
-    </section>
-
-    <!-- Tours disponibles (Español) -->
-    <section id="tours">
-        <h2>Nuetros Tours Populares</h2>
-        <div class="tour">
-            <img src="imagenes/barcelona-tour.jpg" alt="Tour por Barcelona">
-            <h3>Tour por Barcelona</h3>
-            <p>Recorre los monumentos más emblemáticos de Barcelona, desde la Sagrada Familia hasta el Parque Güell.</p>
-            <a href="#" class="btn">Ver más</a>
-        </div>
-        <div class="tour">
-            <img src="imagenes/costa-brava-tour.jpg" alt="Tour por Costa Brava">
-            <h3>Tour por Costa Brava</h3>
-            <p>Disfruta de las playas más hermosas y los pueblos costeros llenos de encanto de la Costa Brava.</p>
-            <a href="#" class="btn">Ver más</a>
-        </div>
-    </section>
-
-    <!-- Tours disponibles (Inglés) -->
-    <section id="tours-en" style="display:none;">
-        <h2>Our Popular Tours</h2>
-        <div class="tour">
-            <img src="imagenes/barcelona-tour.jpg" alt="Barcelona Tour">
-            <h3>Barcelona Tour</h3>
-            <p>Explore the most iconic landmarks of Barcelona, from the Sagrada Familia to Park Güell.</p>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-        <div class="tour">
-            <img src="imagenes/costa-brava-tour.jpg" alt="Costa Brava Tour">
-            <h3>Costa Brava Tour</h3>
-            <p>Enjoy the most beautiful beaches and charming coastal villages of Costa Brava.</p>
-            <a href="#" class="btn">Learn More</a>
-        </div>
-    </section>
-
-    <!-- Testimonios (Español) -->
-    <section id="testimonios">
-        <h2>Lo que dicen nuestros clientes</h2>
-        <div class="testimonio">
-            <p>"Un viaje increíble, el tour por Barcelona fue una experiencia única, ¡definitivamente lo recomiendo!"</p>
-            <p><strong>Juan Pérez</strong></p>
-        </div>
-        <div class="testimonio">
-            <p>"La Costa Brava es impresionante, las vistas, la comida, todo fue perfecto. ¡Gracias por una experiencia tan maravillosa!"</p>
-            <p><strong>Ana González</strong></p>
-        </div>
-    </section>
-
-    <!-- Testimonios (Inglés) -->
-    <section id="testimonios-en" style="display:none;">
-        <h2>What Our Clients Say</h2>
-        <div class="testimonio">
-            <p>"An incredible trip, the Barcelona tour was a unique experience, I definitely recommend it!"</p>
-            <p><strong>Juan Pérez</strong></p>
-        </div>
-        <div class="testimonio">
-            <p>"Costa Brava is stunning, the views, the food, everything was perfect. Thank you for such a wonderful experience!"</p>
-            <p><strong>Ana González</strong></p>
-        </div>
-    </section>
-
-    <!-- Contacto (Español) -->
-    <section id="contacto">
-        <h2>Contacta con nosotros</h2>
-        <p>¿Tienes alguna pregunta o quieres reservar un tour? ¡Ponte en contacto con nosotros!</p>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <!-- Contacto (Inglés) -->
-    <section id="contacto-en" style="display:none;">
-        <h2>Contact Us</h2>
-        <p>Have any questions or want to book a tour? Get in touch with us!</p>
-        <form>
-            <label for="nombre">Name:</label>
-            <input type="text" id="nombre" name="nombre" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensaje">Message:</label>
-            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-
-    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 Barcelona y Costa Brava. Todos los derechos reservados.</p>
+        <p>&copy; 2025 Barcelona Costa Brava Tours. All Rights Reserved.</p>
     </footer>
 
     <script>
-        // Función para cambiar el idioma
-        function cambiarIdioma(idioma) {
-            if (idioma === 'es') {
-                // Mostrar la versión en español
-                document.getElementById('inicio').style.display = 'block';
-                document.getElementById('tours').style.display = 'block';
-                document.getElementById('testimonios').style.display = 'block';
-                document.getElementById('contacto').style.display = 'block';
-                // Ocultar la versión en inglés
-                document.getElementById('inicio-en').style.display = 'none';
-                document.getElementById('tours-en').style.display = 'none';
-                document.getElementById('testimonios-en').style.display = 'none';
-                document.getElementById('contacto-en').style.display = 'none';
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                // Cambiar a la versión en inglés
+                document.querySelector('h1').innerText = 'Welcome to Barcelona Costa Brava Tours';
+                document.querySelector('.bienvenida p').innerText = 'Discover the best tours in Barcelona and the Costa Brava region.';
+                document.querySelectorAll('.tour h3')[0].innerText = 'Tour to the Sagrada Familia';
+                document.querySelectorAll('.tour p')[0].innerText = 'An unforgettable tour of one of Barcelona’s most iconic landmarks.';
+                document.querySelectorAll('.tour h3')[1].innerText = 'Tour of Park Güell';
+                document.querySelectorAll('.tour p')[1].innerText = 'Explore the colorful and famous park designed by Gaudí.';
+                document.querySelector('footer p').innerText = '&copy; 2025 Barcelona Costa Brava Tours. All Rights Reserved.';
             } else {
-                // Mostrar la versión en inglés
-                document.getElementById('inicio-en').style.display = 'block';
-                document.getElementById('tours-en').style.display = 'block';
-                document.getElementById('testimonios-en').style.display = 'block';
-                document.getElementById('contacto-en').style.display = 'block';
-                // Ocultar la versión en español
-                document.getElementById('inicio').style.display = 'none';
-                document.getElementById('tours').style.display = 'none';
-                document.getElementById('testimonios').style.display = 'none';
-                document.getElementById('contacto').style.display = 'none';
+                // Volver a la versión en español
+                document.querySelector('h1').innerText = 'Barcelona Costa Brava Tours';
+                document.querySelector('.bienvenida p').innerText = 'Descubre los mejores tours en Barcelona y la región de la Costa Brava.';
+                document.querySelectorAll('.tour h3')[0].innerText = 'Tour a la Sagrada Familia';
+                document.querySelectorAll('.tour p')[0].innerText = 'Un tour inolvidable por uno de los monumentos más icónicos de Barcelona.';
+                document.querySelectorAll('.tour h3')[1].innerText = 'Tour por el Parque Güell';
+                document.querySelectorAll('.tour p')[1].innerText = 'Explora el colorido y famoso parque diseñado por Gaudí.';
+                document.querySelector('footer p').innerText = '&copy; 2025 Barcelona Costa Brava Tours. Todos los derechos reservados.';
             }
         }
     </script>
-<link rel="stylesheet" href="styles.css">
-
 </body>
 </html>
