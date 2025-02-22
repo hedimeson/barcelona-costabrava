@@ -59,7 +59,7 @@ nav {
 
 #hero {
     height: 100vh;
-    background: url('images/barcelona-hero.jpg') center/cover no-repeat;
+    background: url('https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
