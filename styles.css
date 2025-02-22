@@ -1154,3 +1154,314 @@ p {
         height: 180px;
     }
 }
+/* Correcciones de bugs y optimizaciones */
+
+/* Bug: Testimonial slider desborda en pantallas pequeñas */
+.testimonial-slider {
+    overflow: hidden; /* Ya está, pero reforzamos claridad */
+    position: relative;
+}
+
+/* Bug: Hero slider no respeta overflow en algunos casos */
+.hero-slider {
+    overflow: hidden; /* Aseguramos que no haya desbordamiento */
+}
+
+/* Optimización: Añadir transición suave al menú móvil */
+.nav-links {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Bug: Asegurar que los elementos de la galería no se desborden */
+.gallery-item {
+    overflow: hidden;
+}
+
+/* Optimización: Mejorar visibilidad de botones en pantallas pequeñas */
+.btn, .btn-secondary, .btn-tour {
+    min-width: 150px; /* Evita que se encojan demasiado */
+}
+
+/* Ajuste: Consistencia en sombras para un look más profesional */
+.tour-card, .highlight-card, .blog-post, .service-card, .event-card {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12); /* Sombra más profunda */
+}
+
+/* Estilos para nuevas secciones */
+
+/* Itineraries Section */
+.itineraries {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.itineraries h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.itinerary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.itinerary-card {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.itinerary-card:hover {
+    transform: translateY(-10px);
+}
+
+.itinerary-card h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.itinerary-list {
+    list-style: none;
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.itinerary-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.itinerary-list li::before {
+    content: "\f058"; /* Icono de Font Awesome (círculo con check) */
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.itinerary-card .btn-tour {
+    display: block;
+    text-align: center;
+}
+
+/* Extended Gallery Section */
+.extended-gallery {
+    padding: 100px 0;
+    background: #f1f5f9;
+}
+
+.extended-gallery h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.gallery-grid-extended {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item-extended {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-extended:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item-extended img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-item-extended:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item-extended .gallery-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item-extended:hover .gallery-overlay {
+    transform: translateY(0);
+}
+
+/* Booking Section */
+.booking {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.booking h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.booking-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.booking-form .form-group {
+    margin-bottom: 25px;
+}
+
+.booking-form label {
+    display: block;
+    font-size: 1.1em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.booking-form select,
+.booking-form input,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form select:focus,
+.booking-form input:focus,
+.booking-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.booking-form input[type="number"] {
+    -moz-appearance: textfield; /* Elimina flechas en Firefox */
+}
+
+.booking-form input::-webkit-outer-spin-button,
+.booking-form input::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Elimina flechas en Chrome/Safari */
+    margin: 0;
+}
+
+.booking-form textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.booking-form button {
+    width: 100%;
+}
+
+/* Certifications Section */
+.certifications {
+    padding: 100px 0;
+    background: #f1f5f9;
+}
+
+.certifications h2 {
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 20px;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.certification-card {
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-10px);
+}
+
+.certification-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.certification-card h3 {
+    font-size: 1.5em;
+    margin: 20px;
+    color: #2c3e50;
+}
+
+.certification-card p {
+    font-size: 1em;
+    margin: 0 20px 20px;
+    color: #666;
+}
+
+/* Responsive ajustes para nuevas secciones */
+@media (max-width: 768px) {
+    .itinerary-grid,
+    .gallery-grid-extended,
+    .certifications-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .itineraries h2,
+    .extended-gallery h2,
+    .booking h2,
+    .certifications h2 {
+        font-size: 2em;
+    }
+
+    .itinerary-card,
+    .certification-card {
+        padding: 20px;
+    }
+
+    .gallery-item-extended img,
+    .certification-card img {
+        height: 180px;
+    }
+
+    .booking-form select,
+    .booking-form input,
+    .booking-form textarea {
+        font-size: 0.9em;
+    }
+}
