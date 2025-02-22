@@ -1,3 +1,4 @@
+/* Reset y estilos base */
 * {
     margin: 0;
     padding: 0;
@@ -8,67 +9,85 @@
 body {
     line-height: 1.6;
     color: #333;
+    background: #f9f9f9;
+    overflow-x: hidden;
 }
 
+/* Contenedor general */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header y navegación */
 header {
     background: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
 }
 
-nav {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 0;
 }
 
-.logo {
-    font-size: 1.5em;
+.logo a {
+    font-size: 1.8em;
     font-weight: bold;
     color: #2c3e50;
+    text-decoration: none;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
 }
 
-.nav-links a {
+.nav-links li a {
     text-decoration: none;
     color: #2c3e50;
     font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
 }
 
-.nav-links a:hover {
+.nav-links li a:hover {
     color: #3498db;
 }
 
 .lang-switcher select {
-    padding: 5px;
+    padding: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
 }
 
-#hero {
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #2c3e50;
+}
+
+/* Sección Hero */
+.hero {
     height: 100vh;
-    background: url('https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    position: relative;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
     margin-top: 80px;
-    position: relative;
 }
 
 .hero-image {
@@ -79,43 +98,82 @@ nav {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    filter: brightness(0.7);
 }
 
-#hero h1 {
-    font-size: 3em;
+.hero-content {
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 3.5em;
     margin-bottom: 20px;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-#hero p {
-    font-size: 1.2em;
+.hero p {
+    font-size: 1.4em;
     margin-bottom: 30px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-#hero button {
-    padding: 10px 30px;
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
     background: #3498db;
-    color: white;
-    border: none;
+    color: #fff;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.1em;
+    font-size: 1.2em;
+    transition: background 0.3s ease;
 }
 
-#hero button:hover {
+.btn:hover {
     background: #2980b9;
 }
 
-#tours, #about {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 20px;
+/* Sección Sobre Mí */
+.about {
+    padding: 80px 0;
+    background: #fff;
 }
 
-#tours h2, #about h2 {
+.about h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 2em;
+    font-size: 2.5em;
     color: #2c3e50;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-image {
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Sección Excursiones */
+.tours {
+    padding: 80px 0;
+    background: #f1f5f9;
+}
+
+.tours h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 50px;
 }
 
 .tour-grid {
@@ -127,9 +185,13 @@ nav {
 .tour-card {
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tour-card:hover {
+    transform: translateY(-10px);
 }
 
 .tour-card img {
@@ -139,31 +201,380 @@ nav {
 }
 
 .tour-card h3 {
-    padding: 15px;
+    padding: 20px;
+    font-size: 1.5em;
     color: #2c3e50;
 }
 
 .tour-card p {
-    padding: 0 15px 20px;
-    color: #7f8c8d;
+    padding: 0 20px 20px;
+    font-size: 1em;
+    color: #666;
 }
 
-#about p {
-    text-align: center;
-    max-width: 800px;
-    margin: 0 auto 20px;
+.tour-details {
+    padding: 0 20px 20px;
+    list-style: none;
+    font-size: 0.9em;
+    color: #888;
 }
 
-.about-image {
+.tour-details li {
+    margin-bottom: 10px;
+}
+
+.btn-secondary {
     display: block;
-    margin: 20px auto;
-    max-width: 300px;
+    margin: 0 20px 20px;
+    padding: 10px;
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #34495e;
+}
+
+/* Sección Galería */
+.gallery {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.gallery h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
     border-radius: 10px;
 }
 
-footer {
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1em;
     text-align: center;
-    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-caption {
+    transform: translateY(0);
+}
+
+/* Sección Testimonios */
+.testimonials {
+    padding: 80px 0;
+    background: #f1f5f9;
+}
+
+.testimonials h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.testimonial-card span {
+    display: block;
+    font-size: 1em;
+    color: #888;
+    text-align: right;
+}
+
+/* Sección Preguntas Frecuentes */
+.faq {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.faq h2 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 50px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.4em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Sección Contacto */
+.contact {
+    padding: 80px 0;
     background: #2c3e50;
-    color: white;
+    color: #fff;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 50px;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-info p i {
+    margin-right: 10px;
+    color: #3498db;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #3498db;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    background: #fff;
+    color: #333;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    background: #1a252f;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+}
+
+footer p {
+    text-align: center;
+    font-size: 1em;
+    color: #ccc;
+}
+
+footer p i {
+    color: #e74c3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 20px;
+    }
+
+    .tour-grid,
+    .gallery-grid,
+    .testimonial-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .tour-card h3,
+    .faq-item h3,
+    .testimonials h2,
+    .gallery h2,
+    .tours h2,
+    .about h2,
+    .contact h2 {
+        font-size: 1.8em;
+    }
 }
