@@ -922,5 +922,232 @@
             <li><a href="#special-events" data-lang="es">Eventos Especiales</a></li>
         `);
     </script>
+    <!-- Correcciones y optimizaciones al código existente -->
+    <script>
+        // Optimización: Asegurar que el idioma inicial se aplique al cargar
+        window.addEventListener('load', () => {
+            const lang = document.getElementById('language').value;
+            document.querySelectorAll('[data-lang]').forEach(element => {
+                const text = element.textContent;
+                element.textContent = translations[lang][text] || text;
+            });
+            document.querySelectorAll('input[placeholder], textarea[placeholder]').forEach(element => {
+                const placeholderKey = element.getAttribute('placeholder');
+                element.setAttribute('placeholder', translations[lang][placeholderKey] || placeholderKey);
+            });
+        });
+
+        // Añadir aria-labels para accesibilidad en navegación
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.setAttribute('aria-label', link.textContent);
+        });
+    </script>
+
+    <!-- Sección Itinerarios Detallados -->
+    <section id="itineraries" class="itineraries">
+        <div class="container">
+            <h2 data-lang="es">Itinerarios Detallados</h2>
+            <p class="section-subtitle" data-lang="es">Explora los planes de viaje paso a paso</p>
+            <div class="itinerary-grid">
+                <div class="itinerary-card">
+                    <h3 data-lang="es">Día en Barcelona Modernista</h3>
+                    <ul class="itinerary-list" data-lang="es">
+                        <li><strong>9:00 AM:</strong> Encuentro en Plaza Cataluña</li>
+                        <li><strong>9:30 AM:</strong> Visita guiada a la Sagrada Familia</li>
+                        <li><strong>12:00 PM:</strong> Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)</li>
+                        <li><strong>2:00 PM:</strong> Almuerzo libre en un restaurante recomendado</li>
+                        <li><strong>3:30 PM:</strong> Parc Güell con explicación histórica</li>
+                        <li><strong>5:30 PM:</strong> Fin del tour en el parque</li>
+                    </ul>
+                    <a href="#contact" class="btn-tour" data-lang="es">Reservar Este Tour</a>
+                </div>
+                <div class="itinerary-card">
+                    <h3 data-lang="es">Aventura en Costa Brava</h3>
+                    <ul class="itinerary-list" data-lang="es">
+                        <li><strong>8:00 AM:</strong> Salida desde Barcelona</li>
+                        <li><strong>9:30 AM:</strong> llegada a Tossa de Mar, visita al casco antiguo</li>
+                        <li><strong>12:00 PM:</strong> Cala Aiguablava: tiempo para nadar</li>
+                        <li><strong>2:00 PM:</strong> Almuerzo en un pueblo medieval (Pals)</li>
+                        <li><strong>4:00 PM:</strong> Paseo por Begur y sus vistas</li>
+                        <li><strong>6:00 PM:</strong> Regreso a Barcelona</li>
+                    </ul>
+                    <a href="#contact" class="btn-tour" data-lang="es">Reservar Este Tour</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Galería Extendida -->
+    <section id="extended-gallery" class="extended-gallery">
+        <div class="container">
+            <h2 data-lang="es">Galería Extendida</h2>
+            <p class="section-subtitle" data-lang="es">Más momentos capturados en nuestros tours</p>
+            <div class="gallery-grid-extended">
+                <div class="gallery-item-extended">
+                    <img src="https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Parc Güell">
+                    <div class="gallery-overlay">
+                        <p data-lang="es">Parc Güell, Barcelona</p>
+                    </div>
+                </div>
+                <div class="gallery-item-extended">
+                    <img src="https://images.unsplash.com/photo-1600585154983-7f3e5a2f3f9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Tossa de Mar">
+                    <div class="gallery-overlay">
+                        <p data-lang="es">Tossa de Mar, Costa Brava</p>
+                    </div>
+                </div>
+                <div class="gallery-item-extended">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cadaqués">
+                    <div class="gallery-overlay">
+                        <p data-lang="es">Cadaqués, Costa Brava</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Reservas en Línea -->
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2 data-lang="es">Reservas en Línea</h2>
+            <p class="section-subtitle" data-lang="es">Planifica tu tour fácilmente</p>
+            <form class="booking-form" action="mailto:svetlana@barcelona-costabrava.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="tour-select" data-lang="es">Selecciona tu Tour:</label>
+                    <select id="tour-select" name="tour" required>
+                        <option value="Barcelona Histórica y Modernista" data-lang="es">Barcelona Histórica y Modernista</option>
+                        <option value="Costa Brava: Naturaleza y Pueblos" data-lang="es">Costa Brava: Naturaleza y Pueblos</option>
+                        <option value="Ruta Salvador Dalí" data-lang="es">Ruta Salvador Dalí</option>
+                        <option value="Montserrat: Montaña Sagrada" data-lang="es">Montserrat: Montaña Sagrada</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="date" data-lang="es">Fecha Preferida:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="participants" data-lang="es">Número de Participantes:</label>
+                    <input type="number" id="participants" name="participants" min="1" max="8" required>
+                </div>
+                <div class="form-group">
+                    <textarea name="comments" placeholder="Comentarios Adicionales" data-lang="es"></textarea>
+                </div>
+                <button type="submit" class="btn" data-lang="es">Enviar Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Sección Certificaciones -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 data-lang="es">Certificaciones y Reconocimientos</h2>
+            <p class="section-subtitle" data-lang="es">Garantía de calidad y profesionalismo</p>
+            <div class="certifications-grid">
+                <div class="certification-card">
+                    <img src="https://images.unsplash.com/photo-1580582932707-520aed4e4027?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Certificación Generalitat">
+                    <h3 data-lang="es">Guía Oficial de Cataluña</h3>
+                    <p data-lang="es">Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.</p>
+                </div>
+                <div class="certification-card">
+                    <img src="https://images.unsplash.com/photo-1580894894513-541e068a3e2b?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sostenibilidad">
+                    <h3 data-lang="es">Turismo Sostenible</h3>
+                    <p data-lang="es">Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Traducciones adicionales para el script existente -->
+    <script>
+        // Añadir estas traducciones al objeto `translations` existente
+        const newTranslations = {
+            es: {
+                "Itinerarios Detallados": "Itinerarios Detallados",
+                "Explora los planes de viaje paso a paso": "Explora los planes de viaje paso a paso",
+                "Día en Barcelona Modernista": "Día en Barcelona Modernista",
+                "9:00 AM: Encuentro en Plaza Cataluña": "9:00 AM: Encuentro en Plaza Cataluña",
+                "9:30 AM: Visita guiada a la Sagrada Familia": "9:30 AM: Visita guiada a la Sagrada Familia",
+                "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)": "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)",
+                "2:00 PM: Almuerzo libre en un restaurante recomendado": "2:00 PM: Almuerzo libre en un restaurante recomendado",
+                "3:30 PM: Parc Güell con explicación histórica": "3:30 PM: Parc Güell con explicación histórica",
+                "5:30 PM: Fin del tour en el parque": "5:30 PM: Fin del tour en el parque",
+                "Aventura en Costa Brava": "Aventura en Costa Brava",
+                "8:00 AM: Salida desde Barcelona": "8:00 AM: Salida desde Barcelona",
+                "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo": "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo",
+                "12:00 PM: Cala Aiguablava: tiempo para nadar": "12:00 PM: Cala Aiguablava: tiempo para nadar",
+                "2:00 PM: Almuerzo en un pueblo medieval (Pals)": "2:00 PM: Almuerzo en un pueblo medieval (Pals)",
+                "4:00 PM: Paseo por Begur y sus vistas": "4:00 PM: Paseo por Begur y sus vistas",
+                "6:00 PM: Regreso a Barcelona": "6:00 PM: Regreso a Barcelona",
+                "Reservar Este Tour": "Reservar Este Tour",
+                "Galería Extendida": "Galería Extendida",
+                "Más momentos capturados en nuestros tours": "Más momentos capturados en nuestros tours",
+                "Parc Güell, Barcelona": "Parc Güell, Barcelona",
+                "Tossa de Mar, Costa Brava": "Tossa de Mar, Costa Brava",
+                "Cadaqués, Costa Brava": "Cadaqués, Costa Brava",
+                "Reservas en Línea": "Reservas en Línea",
+                "Planifica tu tour fácilmente": "Planifica tu tour fácilmente",
+                "Selecciona tu Tour:": "Selecciona tu Tour:",
+                "Fecha Preferida:": "Fecha Preferida:",
+                "Número de Participantes:": "Número de Participantes:",
+                "Comentarios Adicionales": "Comentarios Adicionales",
+                "Enviar Solicitud": "Enviar Solicitud",
+                "Certificaciones y Reconocimientos": "Certificaciones y Reconocimientos",
+                "Garantía de calidad y profesionalismo": "Garantía de calidad y profesionalismo",
+                "Guía Oficial de Cataluña": "Guía Oficial de Cataluña",
+                "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.": "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.",
+                "Turismo Sostenible": "Turismo Sostenible",
+                "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.": "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo."
+            },
+            en: {
+                "Itinerarios Detallados": "Detailed Itineraries",
+                "Explora los planes de viaje paso a paso": "Explore travel plans step by step",
+                "Día en Barcelona Modernista": "Day in Modernist Barcelona",
+                "9:00 AM: Encuentro en Plaza Cataluña": "9:00 AM: Meeting at Plaza Cataluña",
+                "9:30 AM: Visita guiada a la Sagrada Familia": "9:30 AM: Guided visit to Sagrada Familia",
+                "12:00 PM: Paseo por el Passeig de Gràcia (Casa Batlló y Casa Milà)": "12:00 PM: Walk along Passeig de Gràcia (Casa Batlló and Casa Milà)",
+                "2:00 PM: Almuerzo libre en un restaurante recomendado": "2:00 PM: Free lunch at a recommended restaurant",
+                "3:30 PM: Parc Güell con explicación histórica": "3:30 PM: Parc Güell with historical explanation",
+                "5:30 PM: Fin del tour en el parque": "5:30 PM: Tour ends at the park",
+                "Aventura en Costa Brava": "Costa Brava Adventure",
+                "8:00 AM: Salida desde Barcelona": "8:00 AM: Departure from Barcelona",
+                "9:30 AM: llegada a Tossa de Mar, visita al casco antiguo": "9:30 AM: Arrival at Tossa de Mar, visit to the old town",
+                "12:00 PM: Cala Aiguablava: tiempo para nadar": "12:00 PM: Cala Aiguablava: time to swim",
+                "2:00 PM: Almuerzo en un pueblo medieval (Pals)": "2:00 PM: Lunch in a medieval village (Pals)",
+                "4:00 PM: Paseo por Begur y sus vistas": "4:00 PM: Walk through Begur and its views",
+                "6:00 PM: Regreso a Barcelona": "6:00 PM: Return to Barcelona",
+                "Reservar Este Tour": "Book This Tour",
+                "Galería Extendida": "Extended Gallery",
+                "Más momentos capturados en nuestros tours": "More moments captured on our tours",
+                "Parc Güell, Barcelona": "Parc Güell, Barcelona",
+                "Tossa de Mar, Costa Brava": "Tossa de Mar, Costa Brava",
+                "Cadaqués, Costa Brava": "Cadaqués, Costa Brava",
+                "Reservas en Línea": "Online Booking",
+                "Planifica tu tour fácilmente": "Plan your tour easily",
+                "Selecciona tu Tour:": "Select Your Tour:",
+                "Fecha Preferida:": "Preferred Date:",
+                "Número de Participantes:": "Number of Participants:",
+                "Comentarios Adicionales": "Additional Comments",
+                "Enviar Solicitud": "Submit Request",
+                "Certificaciones y Reconocimientos": "Certifications and Recognitions",
+                "Garantía de calidad y profesionalismo": "Guarantee of quality and professionalism",
+                "Guía Oficial de Cataluña": "Official Guide of Catalonia",
+                "Acreditada por la Generalitat de Catalunya desde 2012, asegurando un servicio de máxima calidad.": "Accredited by the Generalitat de Catalunya since 2012, ensuring top-quality service.",
+                "Turismo Sostenible": "Sustainable Tourism",
+                "Compromiso con prácticas responsables, reconocido por asociaciones locales de turismo.": "Commitment to responsible practices, recognized by local tourism associations."
+            }
+        };
+
+        // Fusionar traducciones nuevas con las existentes
+        Object.assign(translations.es, newTranslations.es);
+        Object.assign(translations.en, newTranslations.en);
+
+        // Actualizar navegación para incluir nuevas secciones
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.insertAdjacentHTML('beforeend', `
+            <li><a href="#itineraries" data-lang="es">Itinerarios</a></li>
+            <li><a href="#extended-gallery" data-lang="es">Galería Extendida</a></li>
+            <li><a href="#booking" data-lang="es">Reservas</a></li>
+            <li><a href="#certifications" data-lang="es">Certificaciones</a></li>
+        `);
+    </script>
 </body>
 </html>
