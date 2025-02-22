@@ -1,183 +1,218 @@
-/* General */
+/* Estilos generales */
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Barra de navegación */
 header {
-    background-color: #333;
-    padding: 20px 0;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header nav ul {
-    list-style-type: none;
+    background-color: #004c97;
+    color: white;
+    padding: 15px;
     text-align: center;
-    margin: 0;
 }
 
-header nav ul li {
-    display: inline;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
     margin-right: 20px;
 }
 
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    padding: 10px;
+    font-weight: 600;
+    font-size: 18px;
 }
 
-header nav ul li a:hover {
-    background-color: #1e90ff;
-    border-radius: 5px;
-}
-
-/* Sección de bienvenida */
-#inicio {
-    background: url('imagenes/barcelona-costa-brava-banner.jpg') no-repeat center center/cover;
-    color: white;
+/* Estilo para la sección de bienvenida */
+.bienvenida {
     text-align: center;
-    padding: 120px 0;
+    padding: 50px 20px;
+    background-color: #007bff;
+    color: white;
 }
 
 .bienvenida h1 {
-    font-size: 3em;
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
 .bienvenida p {
-    font-size: 1.5em;
+    font-size: 20px;
     margin-bottom: 30px;
 }
 
 .bienvenida .btn {
-    background-color: #1e90ff;
+    background-color: #28a745;
     color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    padding: 10px 20px;
     text-decoration: none;
+    font-size: 18px;
     border-radius: 5px;
 }
 
 .bienvenida .btn:hover {
-    background-color: #555;
+    background-color: #218838;
 }
 
-/* Tours */
-#tours {
-    padding: 50px;
+/* Sección de Tours */
+section {
+    padding: 50px 20px;
     text-align: center;
-    background-color: #fff;
 }
 
-#tours h2 {
-    font-size: 2.5em;
+h2 {
+    font-size: 30px;
     margin-bottom: 40px;
+    color: #004c97;
 }
 
 .tour {
     display: inline-block;
     width: 45%;
-    margin: 20px;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 2%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .tour img {
     width: 100%;
-    height: auto;
-    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .tour h3 {
-    margin-top: 20px;
-    font-size: 1.8em;
+    font-size: 24px;
+    color: #333;
+    margin: 15px 0;
+}
+
+.tour p {
+    font-size: 16px;
+    margin-bottom: 15px;
 }
 
 .tour .btn {
-    background-color: #1e90ff;
+    background-color: #007bff;
     color: white;
     padding: 10px 20px;
-    font-size: 1.1em;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .tour .btn:hover {
-    background-color: #555;
+    background-color: #0056b3;
 }
 
-/* Testimonios */
-#testimonios {
-    padding: 50px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
+/* Sección de Testimonios */
 .testimonio {
-    margin: 20px 0;
-    font-style: italic;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 .testimonio p {
-    font-size: 1.2em;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
 
-/* Contacto */
-#contacto {
-    padding: 50px;
-    text-align: center;
+.testimonio strong {
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Sección de Contacto */
+form {
     background-color: #fff;
-}
-
-#contacto form {
-    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 50%;
     margin: 0 auto;
     text-align: left;
 }
 
-#contacto form label {
-    font-size: 1.1em;
+form label {
+    font-size: 16px;
     margin-top: 10px;
+    display: block;
 }
 
-#contacto form input, #contacto form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 10px;
-    margin: 10px 0;
-    font-size: 1em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
     border-radius: 5px;
-    border: 1px solid #ddd;
 }
 
-#contacto form button {
-    background-color: #1e90ff;
+form button {
+    background-color: #28a745;
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 18px;
     cursor: pointer;
 }
 
-#contacto form button:hover {
-    background-color: #555;
+form button:hover {
+    background-color: #218838;
 }
 
-/* Pie de página */
+/* Estilos para el selector de idioma */
+.selector-idioma {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.selector-idioma button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.selector-idioma button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el pie de página */
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .tour {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    form {
+        width: 80%;
+    }
 }
