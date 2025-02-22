@@ -59,7 +59,7 @@ nav {
 
 #hero {
     height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') center/cover no-repeat;
+    background: url('images/barcelona-hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,6 +68,17 @@ nav {
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     margin-top: 80px;
+    position: relative;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
 }
 
 #hero h1 {
@@ -94,13 +105,13 @@ nav {
     background: #2980b9;
 }
 
-#tours {
+#tours, #about {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
 }
 
-#tours h2 {
+#tours h2, #about h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 2em;
@@ -135,6 +146,19 @@ nav {
 .tour-card p {
     padding: 0 15px 20px;
     color: #7f8c8d;
+}
+
+#about p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+}
+
+.about-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
 }
 
 footer {
