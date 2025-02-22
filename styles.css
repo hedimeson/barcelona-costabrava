@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y elegante */
     line-height: 1.6;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #f5f6f5; /* Fondo claro y suave */
 }
 
 /* Clase para ocultar elementos */
@@ -20,16 +20,19 @@ body {
 /* Pantalla de Inicio */
 .splash-screen {
     height: 100vh;
+    background: linear-gradient(135deg, #0077b6 0%, #00b4d8 100%); /* Gradiente mediterráneo */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0077b6; /* Azul mediterráneo */
     transition: opacity 0.5s ease;
 }
 
+.splash-content {
+    text-align: center;
+}
+
 .home-icon img {
-    width: 200px;
+    width: 220px;
     height: auto;
     transition: transform 0.3s ease;
 }
@@ -38,58 +41,76 @@ body {
     transform: scale(1.1);
 }
 
+.splash-text {
+    color: #fff;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
 .social-icons {
-    margin-top: 40px;
     display: flex;
-    gap: 30px;
+    justify-content: center;
+    gap: 25px;
 }
 
 .social-img {
     width: 50px;
     height: auto;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .social-img:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
+    opacity: 0.9;
 }
 
 /* Contenido Principal */
 .main-content {
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     padding: 20px;
 }
 
 /* Navegación */
 header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 1000;
 }
 
-nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 20px;
-    max-width: 1200px;
+    padding: 15px 30px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .logo a {
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 26px;
+    font-weight: 700;
     color: #0077b6;
     text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 28px;
+    color: #0077b6;
+    cursor: pointer;
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 25px;
+    align-items: center;
 }
 
 .nav-links li a {
@@ -105,104 +126,203 @@ nav {
 
 .lang-btn {
     background: none;
-    border: none;
-    color: #333;
-    font-weight: 500;
+    border: 1px solid #0077b6;
+    color: #0077b6;
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s ease;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .lang-btn:hover {
-    color: #0077b6;
+    background-color: #0077b6;
+    color: #fff;
 }
 
-/* Secciones */
+/* Secciones Generales */
 section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
 h1 {
-    font-size: 36px;
-    color: #0077b6;
+    font-size: 42px;
+    color: #023047;
     margin-bottom: 20px;
+    font-weight: 700;
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 32px;
+    color: #0077b6;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 22px;
     color: #023047;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 p {
     font-size: 16px;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto 20px;
+    color: #555;
 }
 
-ul {
-    list-style: none;
-    max-width: 600px;
+/* Hero Section */
+.hero-section {
+    background: url('assets/hero-bg.jpg') no-repeat center center/cover; /* Placeholder para fondo */
+    padding: 100px 20px;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffb703;
+    color: #023047;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #fb8500;
+}
+
+/* About Section */
+.about-section {
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1000px;
     margin: 0 auto;
-    text-align: left;
 }
 
-ul li {
-    margin-bottom: 15px;
-    position: relative;
-    padding-left: 20px;
+.about-text {
+    flex: 1;
 }
 
-ul li:before {
-    content: "•";
-    color: #ffb703; /* Amarillo mediterráneo */
-    position: absolute;
-    left: 0;
+.profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Lista de Excursiones */
-.excursion-list {
+/* Services Section */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 30px auto 0;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tours Section */
+.tours-section {
+    background-color: #f0f4f8;
+}
+
+.tours-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    max-width: 1200px;
+    margin: 30px auto 0;
 }
 
-.excursion-item {
+.tour-item {
     background-color: #fff;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
 }
 
-.excursion-item:hover {
+.tour-item:hover {
     transform: translateY(-5px);
 }
 
-.excursion-item h3 {
-    font-size: 22px;
-    color: #023047;
-    margin-bottom: 10px;
+/* Testimonials Section */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.testimonial-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    font-style: italic;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Contact Section */
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #0077b6;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #fb8500;
 }
 
 /* Footer */
-footer {
+.footer {
     background-color: #023047;
     color: #fff;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
-    margin-top: 40px;
 }
 
-footer p {
+.footer p {
     margin-bottom: 10px;
+    color: #fff;
 }
 
 .social-links a {
     color: #ffb703;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 15px;
     transition: color 0.3s ease;
 }
 
@@ -212,6 +332,10 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
     .nav-links {
         display: none;
         flex-direction: column;
@@ -221,48 +345,54 @@ footer p {
         width: 100%;
         background-color: #fff;
         padding: 20px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav-links.active {
         display: flex;
     }
 
-    nav::after {
-        content: "☰";
-        font-size: 24px;
-        color: #0077b6;
-        cursor: pointer;
-    }
-
     .logo a {
-        font-size: 20px;
+        font-size: 22px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 32px;
     }
 
     h2 {
-        font-size: 24px;
-    }
-
-    .excursion-list {
-        grid-template-columns: 1fr;
+        font-size: 26px;
     }
 
     .home-icon img {
-        width: 150px;
+        width: 180px;
+    }
+
+    .splash-text {
+        font-size: 18px;
     }
 
     .social-img {
         width: 40px;
     }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .services-grid, .tours-grid, .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
-/* Toggle para menú móvil (requiere JS adicional si quieres implementarlo) */
 @media (min-width: 769px) {
-    nav::after {
-        content: none;
+    .menu-toggle {
+        display: none;
     }
 }
