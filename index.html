@@ -3,121 +3,408 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barcelona & Costa Brava Tours - Guía Licenciada</title>
+    <title>Barcelona & Costa Brava Tours - Svetlana Savenko</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
+    <!-- Header con navegación -->
     <header>
-        <nav>
-            <div class="logo">Barcelona & Costa Brava</div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#home">Barcelona & Costa Brava</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home" data-lang="es">Inicio</a></li>
+                <li><a href="#about" data-lang="es">Sobre Mí</a></li>
                 <li><a href="#tours" data-lang="es">Excursiones</a></li>
+                <li><a href="#gallery" data-lang="es">Galería</a></li>
+                <li><a href="#testimonials" data-lang="es">Testimonios</a></li>
+                <li><a href="#faq" data-lang="es">Preguntas Frecuentes</a></li>
                 <li><a href="#contact" data-lang="es">Contacto</a></li>
                 <li class="lang-switcher">
                     <select id="language">
                         <option value="es">Español</option>
                         <option value="en">English</option>
-                        <option value="ru">Русский</option>
                     </select>
                 </li>
             </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
-    <section id="hero">
-        <h1 data-lang="es">Explora Barcelona y Costa Brava con una Guía Licenciada</h1>
-        <p data-lang="es">Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.</p>
-        <button data-lang="es">Reserva Ahora</button>
-        <img src="https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Vista de Barcelona" class="hero-image">
+    <!-- Sección Hero -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 data-lang="es">Descubre Barcelona y Costa Brava con una Guía Licenciada</h1>
+            <p data-lang="es">Excursiones personalizadas por Cataluña con Svetlana Savenko, experta en historia, cultura y naturaleza.</p>
+            <a href="#contact" class="btn" data-lang="es">Reserva tu Experiencia</a>
+        </div>
+        <img src="https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" alt="Vista de Barcelona" class="hero-image">
     </section>
 
-    <section id="tours">
-        <h2 data-lang="es">Nuestras Excursiones</h2>
-        <div class="tour-grid">
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1562883782-40f58f6e13eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Sagrada Familia">
-                <h3 data-lang="es">Barcelona Histórica</h3>
-                <p data-lang="es">Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.</p>
-            </div>
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Cala en Costa Brava">
-                <h3 data-lang="es">Costa Brava Natural</h3>
-                <p data-lang="es">Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.</p>
-            </div>
-            <div class="tour-card">
-                <img src="https://images.unsplash.com/photo-1621352559979-525ab2e96e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Museo Dalí">
-                <h3 data-lang="es">Ruta Dalí</h3>
-                <p data-lang="es">Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.</p>
+    <!-- Sección Sobre Mí -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 data-lang="es">Sobre Svetlana Savenko</h2>
+            <div class="about-content">
+                <img src="https://images.unsplash.com/photo-1525874684015-58379d164a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Svetlana Savenko" class="about-image">
+                <div class="about-text">
+                    <p data-lang="es">Soy Svetlana Savenko, guía turística licenciada en Cataluña con más de 10 años de experiencia mostrando lo mejor de Barcelona y la Costa Brava. Mi pasión por la historia, la cultura y la naturaleza de esta región me ha llevado a diseñar excursiones únicas y personalizadas para viajeros de todo el mundo.</p>
+                    <p data-lang="es">Ofrezco tours adaptados a tus intereses: desde caminatas por senderos naturales hasta visitas culturales en profundidad por los rincones más emblemáticos de Cataluña. Mi objetivo es que vivas una experiencia inolvidable, descubriendo los secretos mejor guardados de esta tierra con un enfoque profesional y cercano.</p>
+                    <p data-lang="es">Mis servicios están dirigidos a pequeños grupos, familias o viajeros individuales que buscan calidad, flexibilidad y un trato personalizado. Hablo español, inglés y otros idiomas, asegurando una comunicación fluida y enriquecedora. ¡Déjame guiarte por este rincón mágico de España!</p>
+                    <p data-lang="es">Además, estoy acreditada por la Generalitat de Catalunya como guía oficial, lo que garantiza un conocimiento profundo y actualizado de cada lugar que visitamos. Mi enfoque es sostenible y respetuoso con el patrimonio cultural y natural de la región.</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="about">
-        <h2 data-lang="es">Sobre Mí</h2>
-        <p data-lang="es">Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.</p>
-        <img src="https://images.unsplash.com/photo-1525874684015-58379d164a52?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80" alt="Svetlana Savenko, Guía" class="about-image">
+    <!-- Sección Excursiones -->
+    <section id="tours" class="tours">
+        <div class="container">
+            <h2 data-lang="es">Excursiones Personalizadas</h2>
+            <div class="tour-grid">
+                <div class="tour-card">
+                    <img src="https://images.unsplash.com/photo-1562883782-40f58f6e13eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Sagrada Familia">
+                    <h3 data-lang="es">Barcelona Histórica y Modernista</h3>
+                    <p data-lang="es">Explora la Sagrada Familia, el Barrio Gótico, la Casa Batlló, el Parc Güell y otros tesoros de Gaudí y la historia medieval de Barcelona. Incluye anécdotas históricas y acceso prioritario a monumentos cuando sea posible.</p>
+                    <ul class="tour-details" data-lang="es">
+                        <li>Duración: 4-6 horas</li>
+                        <li>Grupo: Máximo 8 personas</li>
+                        <li>Precio: Desde 50€/persona</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary" data-lang="es">Reservar</a>
+                </div>
+                <div class="tour-card">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cala Costa Brava">
+                    <h3 data-lang="es">Costa Brava: Naturaleza y Pueblos</h3>
+                    <p data-lang="es">Recorre calas escondidas como Aiguablava, pueblos medievales como Pals, Peratallada y Tossa de Mar, y disfruta de la belleza natural del Mediterráneo. Opcional: parada para degustación de productos locales.</p>
+                    <ul class="tour-details" data-lang="es">
+                        <li>Duración: 8-10 horas</li>
+                        <li>Grupo: Máximo 6 personas</li>
+                        <li>Precio: Desde 80€/persona</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary" data-lang="es">Reservar</a>
+                </div>
+                <div class="tour-card">
+                    <img src="https://images.unsplash.com/photo-1621352559979-525ab2e96e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Museo Dalí">
+                    <h3 data-lang="es">Ruta Salvador Dalí</h3>
+                    <p data-lang="es">Visita el Teatro-Museo Dalí en Figueres, la casa de Port Lligat en Cadaqués y el castillo de Púbol. Una inmersión en la vida y obra del genio surrealista, con historias exclusivas sobre su legado.</p>
+                    <ul class="tour-details" data-lang="es">
+                        <li>Duración: 10-12 horas</li>
+                        <li>Grupo: Máximo 6 personas</li>
+                        <li>Precio: Desde 120€/persona</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary" data-lang="es">Reservar</a>
+                </div>
+                <div class="tour-card">
+                    <img src="https://images.unsplash.com/photo-1596434719878-ba36ebde789f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Montserrat">
+                    <h3 data-lang="es">Montserrat: Montaña y Monasterio</h3>
+                    <p data-lang="es">Descubre la montaña sagrada de Montserrat, su monasterio benedictino, la Virgen Negra y rutas de senderismo con vistas espectaculares. Incluye tiempo para escuchar el coro de niños si el horario lo permite.</p>
+                    <ul class="tour-details" data-lang="es">
+                        <li>Duración: 6-8 horas</li>
+                        <li>Grupo: Máximo 8 personas</li>
+                        <li>Precio: Desde 70€/persona</li>
+                    </ul>
+                    <a href="#contact" class="btn-secondary" data-lang="es">Reservar</a>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <!-- Sección Galería -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 data-lang="es">Galería de Experiencias</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1562883782-40f58f6e13eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Sagrada Familia">
+                    <div class="gallery-caption" data-lang="es">Sagrada Familia al atardecer</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Costa Brava">
+                    <div class="gallery-caption" data-lang="es">Cala Aiguablava</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1621352559979-525ab2e96e31?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Museo Dalí">
+                    <div class="gallery-caption" data-lang="es">Teatro-Museo Dalí</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1596434719878-ba36ebde789f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Montserrat">
+                    <div class="gallery-caption" data-lang="es">Montserrat al amanecer</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579270912398-7d8e1ca845af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Barrio Gótico">
+                    <div class="gallery-caption" data-lang="es">Calles del Barrio Gótico</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1591019475299-d49eaea90ede?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Panorámica Barcelona">
+                    <div class="gallery-caption" data-lang="es">Barcelona desde las alturas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Testimonios -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 data-lang="es">Testimonios de Viajeros</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p data-lang="es">"La excursión con Svetlana por Barcelona fue increíble. Su conocimiento y entusiasmo hicieron que cada rincón cobrara vida. ¡Volveré por la ruta de Costa Brava!"</p>
+                    <span data-lang="es">— María G., Madrid</span>
+                </div>
+                <div class="testimonial-card">
+                    <p data-lang="es">"El tour de Dalí fue una experiencia única. Svetlana conoce cada detalle y lo explica con pasión. Totalmente recomendable."</p>
+                    <span data-lang="es">— John P., London</span>
+                </div>
+                <div class="testimonial-card">
+                    <p data-lang="es">"Montserrat con Svetlana fue mágico. Nos llevó por senderos que no habríamos encontrado solos. Una guía excepcional."</p>
+                    <span data-lang="es">— Laura S., Buenos Aires</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Preguntas Frecuentes -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 data-lang="es">Preguntas Frecuentes</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h3 data-lang="es">¿Qué incluye cada tour?</h3>
+                    <p data-lang="es">Todos los tours incluyen guía licenciada, transporte privado (si es necesario), entradas a monumentos (según el tour) y recomendaciones personalizadas. No incluye comidas ni alojamiento, salvo que se especifique.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="es">¿Puedo personalizar mi excursión?</h3>
+                    <p data-lang="es">¡Sí! Contacta conmigo para ajustar horarios, destinos o actividades según tus intereses. Mi objetivo es que tengas una experiencia a medida.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="es">¿Los tours son aptos para niños o personas mayores?</h3>
+                    <p data-lang="es">Adaptamos el ritmo y las actividades a las necesidades del grupo. Indícame cualquier requerimiento especial al reservar.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-lang="es">¿Cómo reservo un tour?</h3>
+                    <p data-lang="es">Rellena el formulario de contacto o envíame un email con tus fechas y preferencias. Te responderé en menos de 24 horas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 data-lang="es">Contáctame</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p data-lang="es"><i class="fas fa-envelope"></i> Email: svetlana@barcelona-costabrava.com</p>
+                    <p data-lang="es"><i class="fas fa-phone"></i> Teléfono: +34 123 456 789</p>
+                    <p data-lang="es"><i class="fas fa-map-marker-alt"></i> Ubicación: Barcelona, España</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" action="mailto:svetlana@barcelona-costabrava.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Nombre" data-lang="es" required>
+                    <input type="email" name="email" placeholder="Email" data-lang="es" required>
+                    <input type="text" name="subject" placeholder="Asunto" data-lang="es" required>
+                    <textarea name="message" placeholder="Mensaje" data-lang="es" required></textarea>
+                    <button type="submit" class="btn" data-lang="es">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p data-lang="es">© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko</p>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 data-lang="es">Barcelona & Costa Brava Tours</h4>
+                    <p data-lang="es">Explora Cataluña con una guía licenciada apasionada por su tierra.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="es">Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="#home" data-lang="es">Inicio</a></li>
+                        <li><a href="#tours" data-lang="es">Excursiones</a></li>
+                        <li><a href="#contact" data-lang="es">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 data-lang="es">Sígueme</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p data-lang="es">© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.</p>
+            <p data-lang="es">Diseñado con <i class="fas fa-heart"></i> para viajeros curiosos.</p>
+        </div>
     </footer>
 
+    <!-- Scripts -->
     <script>
         const translations = {
             es: {
                 "Inicio": "Inicio",
-                "Excursiones": "Excursiones",
-                "Contacto": "Contacto",
-                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Explora Barcelona y Costa Brava con una Guía Licenciada",
-                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.",
-                "Reserva Ahora": "Reserva Ahora",
-                "Nuestras Excursiones": "Nuestras Excursiones",
-                "Barcelona Histórica": "Barcelona Histórica",
-                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.",
-                "Costa Brava Natural": "Costa Brava Natural",
-                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.",
-                "Ruta Dalí": "Ruta Dalí",
-                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.",
                 "Sobre Mí": "Sobre Mí",
-                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.",
-                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko"
+                "Excursiones": "Excursiones",
+                "Galería": "Galería",
+                "Testimonios": "Testimonios",
+                "Preguntas Frecuentes": "Preguntas Frecuentes",
+                "Contacto": "Contacto",
+                "Descubre Barcelona y Costa Brava con una Guía Licenciada": "Descubre Barcelona y Costa Brava con una Guía Licenciada",
+                "Excursiones personalizadas por Cataluña con Svetlana Savenko, experta en historia, cultura y naturaleza.": "Excursiones personalizadas por Cataluña con Svetlana Savenko, experta en historia, cultura y naturaleza.",
+                "Reserva tu Experiencia": "Reserva tu Experiencia",
+                "Sobre Svetlana Savenko": "Sobre Svetlana Savenko",
+                "Soy Svetlana Savenko, guía turística licenciada en Cataluña con más de 10 años de experiencia mostrando lo mejor de Barcelona y la Costa Brava. Mi pasión por la historia, la cultura y la naturaleza de esta región me ha llevado a diseñar excursiones únicas y personalizadas para viajeros de todo el mundo.": "Soy Svetlana Savenko, guía turística licenciada en Cataluña con más de 10 años de experiencia mostrando lo mejor de Barcelona y la Costa Brava. Mi pasión por la historia, la cultura y la naturaleza de esta región me ha llevado a diseñar excursiones únicas y personalizadas para viajeros de todo el mundo.",
+                "Ofrezco tours adaptados a tus intereses: desde caminatas por senderos naturales hasta visitas culturales en profundidad por los rincones más emblemáticos de Cataluña. Mi objetivo es que vivas una experiencia inolvidable, descubriendo los secretos mejor guardados de esta tierra con un enfoque profesional y cercano.": "Ofrezco tours adaptados a tus intereses: desde caminatas por senderos naturales hasta visitas culturales en profundidad por los rincones más emblemáticos de Cataluña. Mi objetivo es que vivas una experiencia inolvidable, descubriendo los secretos mejor guardados de esta tierra con un enfoque profesional y cercano.",
+                "Mis servicios están dirigidos a pequeños grupos, familias o viajeros individuales que buscan calidad, flexibilidad y un trato personalizado. Hablo español, inglés y otros idiomas, asegurando una comunicación fluida y enriquecedora. ¡Déjame guiarte por este rincón mágico de España!": "Mis servicios están dirigidos a pequeños grupos, familias o viajeros individuales que buscan calidad, flexibilidad y un trato personalizado. Hablo español, inglés y otros idiomas, asegurando una comunicación fluida y enriquecedora. ¡Déjame guiarte por este rincón mágico de España!",
+                "Además, estoy acreditada por la Generalitat de Catalunya como guía oficial, lo que garantiza un conocimiento profundo y actualizado de cada lugar que visitamos. Mi enfoque es sostenible y respetuoso con el patrimonio cultural y natural de la región.": "Además, estoy acreditada por la Generalitat de Catalunya como guía oficial, lo que garantiza un conocimiento profundo y actualizado de cada lugar que visitamos. Mi enfoque es sostenible y respetuoso con el patrimonio cultural y natural de la región.",
+                "Excursiones Personalizadas": "Excursiones Personalizadas",
+                "Barcelona Histórica y Modernista": "Barcelona Histórica y Modernista",
+                "Explora la Sagrada Familia, el Barrio Gótico, la Casa Batlló, el Parc Güell y otros tesoros de Gaudí y la historia medieval de Barcelona. Incluye anécdotas históricas y acceso prioritario a monumentos cuando sea posible.": "Explora la Sagrada Familia, el Barrio Gótico, la Casa Batlló, el Parc Güell y otros tesoros de Gaudí y la historia medieval de Barcelona. Incluye anécdotas históricas y acceso prioritario a monumentos cuando sea posible.",
+                "Duración: 4-6 horas": "Duración: 4-6 horas",
+                "Grupo: Máximo 8 personas": "Grupo: Máximo 8 personas",
+                "Precio: Desde 50€/persona": "Precio: Desde 50€/persona",
+                "Costa Brava: Naturaleza y Pueblos": "Costa Brava: Naturaleza y Pueblos",
+                "Recorre calas escondidas como Aiguablava, pueblos medievales como Pals, Peratallada y Tossa de Mar, y disfruta de la belleza natural del Mediterráneo. Opcional: parada para degustación de productos locales.": "Recorre calas escondidas como Aiguablava, pueblos medievales como Pals, Peratallada y Tossa de Mar, y disfruta de la belleza natural del Mediterráneo. Opcional: parada para degustación de productos locales.",
+                "Duración: 8-10 horas": "Duración: 8-10 horas",
+                "Grupo: Máximo 6 personas": "Grupo: Máximo 6 personas",
+                "Precio: Desde 80€/persona": "Precio: Desde 80€/persona",
+                "Ruta Salvador Dalí": "Ruta Salvador Dalí",
+                "Visita el Teatro-Museo Dalí en Figueres, la casa de Port Lligat en Cadaqués y el castillo de Púbol. Una inmersión en la vida y obra del genio surrealista, con historias exclusivas sobre su legado.": "Visita el Teatro-Museo Dalí en Figueres, la casa de Port Lligat en Cadaqués y el castillo de Púbol. Una inmersión en la vida y obra del genio surrealista, con historias exclusivas sobre su legado.",
+                "Duración: 10-12 horas": "Duración: 10-12 horas",
+                "Grupo: Máximo 6 personas": "Grupo: Máximo 6 personas",
+                "Precio: Desde 120€/persona": "Precio: Desde 120€/persona",
+                "Montserrat: Montaña y Monasterio": "Montserrat: Montaña y Monasterio",
+                "Descubre la montaña sagrada de Montserrat, su monasterio benedictino, la Virgen Negra y rutas de senderismo con vistas espectaculares. Incluye tiempo para escuchar el coro de niños si el horario lo permite.": "Descubre la montaña sagrada de Montserrat, su monasterio benedictino, la Virgen Negra y rutas de senderismo con vistas espectaculares. Incluye tiempo para escuchar el coro de niños si el horario lo permite.",
+                "Duración: 6-8 horas": "Duración: 6-8 horas",
+                "Grupo: Máximo 8 personas": "Grupo: Máximo 8 personas",
+                "Precio: Desde 70€/persona": "Precio: Desde 70€/persona",
+                "Reservar": "Reservar",
+                "Galería de Experiencias": "Galería de Experiencias",
+                "Sagrada Familia al atardecer": "Sagrada Familia al atardecer",
+                "Cala Aiguablava": "Cala Aiguablava",
+                "Teatro-Museo Dalí": "Teatro-Museo Dalí",
+                "Montserrat al amanecer": "Montserrat al amanecer",
+                "Calles del Barrio Gótico": "Calles del Barrio Gótico",
+                "Barcelona desde las alturas": "Barcelona desde las alturas",
+                "Testimonios de Viajeros": "Testimonios de Viajeros",
+                "\"La excursión con Svetlana por Barcelona fue increíble. Su conocimiento y entusiasmo hicieron que cada rincón cobrara vida. ¡Volveré por la ruta de Costa Brava!\"": "\"La excursión con Svetlana por Barcelona fue increíble. Su conocimiento y entusiasmo hicieron que cada rincón cobrara vida. ¡Volveré por la ruta de Costa Brava!\"",
+                "— María G., Madrid": "— María G., Madrid",
+                "\"El tour de Dalí fue una experiencia única. Svetlana conoce cada detalle y lo explica con pasión. Totalmente recomendable.\"": "\"El tour de Dalí fue una experiencia única. Svetlana conoce cada detalle y lo explica con pasión. Totalmente recomendable.\"",
+                "— John P., London": "— John P., London",
+                "\"Montserrat con Svetlana fue mágico. Nos llevó por senderos que no habríamos encontrado solos. Una guía excepcional.\"": "\"Montserrat con Svetlana fue mágico. Nos llevó por senderos que no habríamos encontrado solos. Una guía excepcional.\"",
+                "— Laura S., Buenos Aires": "— Laura S., Buenos Aires",
+                "Preguntas Frecuentes": "Preguntas Frecuentes",
+                "¿Qué incluye cada tour?": "¿Qué incluye cada tour?",
+                "Todos los tours incluyen guía licenciada, transporte privado (si es necesario), entradas a monumentos (según el tour) y recomendaciones personalizadas. No incluye comidas ni alojamiento, salvo que se especifique.": "Todos los tours incluyen guía licenciada, transporte privado (si es necesario), entradas a monumentos (según el tour) y recomendaciones personalizadas. No incluye comidas ni alojamiento, salvo que se especifique.",
+                "¿Puedo personalizar mi excursión?": "¿Puedo personalizar mi excursión?",
+                "¡Sí! Contacta conmigo para ajustar horarios, destinos o actividades según tus intereses. Mi objetivo es que tengas una experiencia a medida.": "¡Sí! Contacta conmigo para ajustar horarios, destinos o actividades según tus intereses. Mi objetivo es que tengas una experiencia a medida.",
+                "¿Los tours son aptos para niños o personas mayores?": "¿Los tours son aptos para niños o personas mayores?",
+                "Adaptamos el ritmo y las actividades a las necesidades del grupo. Indícame cualquier requerimiento especial al reservar.": "Adaptamos el ritmo y las actividades a las necesidades del grupo. Indícame cualquier requerimiento especial al reservar.",
+                "¿Cómo reservo un tour?": "¿Cómo reservo un tour?",
+                "Rellena el formulario de contacto o envíame un email con tus fechas y preferencias. Te responderé en menos de 24 horas.": "Rellena el formulario de contacto o envíame un email con tus fechas y preferencias. Te responderé en menos de 24 horas.",
+                "Contáctame": "Contáctame",
+                "Email: svetlana@barcelona-costabrava.com": "Email: svetlana@barcelona-costabrava.com",
+                "Teléfono: +34 123 456 789": "Teléfono: +34 123 456 789",
+                "Ubicación: Barcelona, España": "Ubicación: Barcelona, España",
+                "Nombre": "Nombre",
+                "Email": "Email",
+                "Asunto": "Asunto",
+                "Mensaje": "Mensaje",
+                "Enviar Mensaje": "Enviar Mensaje",
+                "Barcelona & Costa Brava Tours": "Barcelona & Costa Brava Tours",
+                "Explora Cataluña con una guía licenciada apasionada por su tierra.": "Explora Cataluña con una guía licenciada apasionada por su tierra.",
+                "Enlaces Rápidos": "Enlaces Rápidos",
+                "Sígueme": "Sígueme",
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.",
+                "Diseñado con <i class='fas fa-heart'></i> para viajeros curiosos.": "Diseñado con <i class='fas fa-heart'></i> para viajeros curiosos."
             },
             en: {
                 "Inicio": "Home",
-                "Excursiones": "Tours",
-                "Contacto": "Contact",
-                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Explore Barcelona & Costa Brava with a Licensed Guide",
-                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Personalized tours in Catalonia with Svetlana Savenko, an official guide with years of experience.",
-                "Reserva Ahora": "Book Now",
-                "Nuestras Excursiones": "Our Tours",
-                "Barcelona Histórica": "Historic Barcelona",
-                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Explore the Gothic Quarter, Sagrada Familia, and the medieval secrets of the city.",
-                "Costa Brava Natural": "Natural Costa Brava",
-                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Discover hidden coves, medieval villages, and nature trails.",
-                "Ruta Dalí": "Dalí Route",
-                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Visit the Dalí Museum in Figueres and his home in Port Lligat, a journey into surrealism.",
                 "Sobre Mí": "About Me",
-                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "I am Svetlana Savenko, a licensed guide in Catalonia with a passion for history, culture, and nature. I offer unique tours tailored to your interests, from long hikes to cultural routes in Barcelona and Costa Brava.",
-                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko"
-            },
-            ru: {
-                "Inicio": "Главная",
-                "Excursiones": "Экскурсии",
-                "Contacto": "Контакты",
-                "Explora Barcelona y Costa Brava con una Guía Licenciada": "Исследуйте Барселону и Коста-Браву с лицензированным гидом",
-                "Excursiones personalizadas por Cataluña con Svetlana Savenko, guía oficial con años de experiencia.": "Персонализированные экскурсии по Каталонии с Светланой Савенко, официальным гидом с многолетним опытом.",
-                "Reserva Ahora": "Забронировать",
-                "Nuestras Excursiones": "Наши экскурсии",
-                "Barcelona Histórica": "Историческая Барселона",
-                "Recorre el Barrio Gótico, la Sagrada Familia y los secretos medievales de la ciudad.": "Прогуляйтесь по Готическому кварталу, Саграда Фамилии и откройте средневековые тайны города.",
-                "Costa Brava Natural": "Природная Коста-Брава",
-                "Descubre calas escondidas, pueblos medievales y rutas por la naturaleza.": "Откройте скрытые бухты, средневековые деревни и маршруты по природе.",
-                "Ruta Dalí": "Маршрут Дали",
-                "Visita el Museo Dalí en Figueres y su casa en Port Lligat, un viaje al surrealismo.": "Посетите музей Дали в Фигерасе и его дом в Порт-Льигате, путешествие в сюрреализм.",
-                "Sobre Mí": "Обо мне",
-                "Soy Svetlana Savenko, guía licenciada en Cataluña con pasión por la historia, la cultura y la naturaleza. Ofrezco excursiones únicas adaptadas a tus intereses, desde caminatas largas hasta rutas culturales en Barcelona y la Costa Brava.": "Я Светлана Савенко, лицензированный гид в Каталонии с любовью к истории, культуре и природе. Предлагаю уникальные экскурсии, адаптированные под ваши интересы, от долгих прогулок до культурных маршрутов в Барселоне и на Коста-Браве.",
-                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko": "© 2025 Туры по Барселоне и Коста-Браве - Светлана Савенко"
+                "Excursiones": "Tours",
+                "Galería": "Gallery",
+                "Testimonios": "Testimonials",
+                "Preguntas Frecuentes": "FAQ",
+                "Contacto": "Contact",
+                "Descubre Barcelona y Costa Brava con una Guía Licenciada": "Discover Barcelona & Costa Brava with a Licensed Guide",
+                "Excursiones personalizadas por Cataluña con Svetlana Savenko, experta en historia, cultura y naturaleza.": "Personalized tours in Catalonia with Svetlana Savenko, expert in history, culture, and nature.",
+                "Reserva tu Experiencia": "Book Your Experience",
+                "Sobre Svetlana Savenko": "About Svetlana Savenko",
+                "Soy Svetlana Savenko, guía turística licenciada en Cataluña con más de 10 años de experiencia mostrando lo mejor de Barcelona y la Costa Brava. Mi pasión por la historia, la cultura y la naturaleza de esta región me ha llevado a diseñar excursiones únicas y personalizadas para viajeros de todo el mundo.": "I am Svetlana Savenko, a licensed tour guide in Catalonia with over 10 years of experience showcasing the best of Barcelona and Costa Brava. My passion for the history, culture, and nature of this region has led me to design unique and personalized tours for travelers worldwide.",
+                "Ofrezco tours adaptados a tus intereses: desde caminatas por senderos naturales hasta visitas culturales en profundidad por los rincones más emblemáticos de Cataluña. Mi objetivo es que vivas una experiencia inolvidable, descubriendo los secretos mejor guardados de esta tierra con un enfoque profesional y cercano.": "I offer tours tailored to your interests: from hikes along natural trails to in-depth cultural visits to Catalonia’s most iconic corners. My goal is to provide an unforgettable experience, uncovering the region’s best-kept secrets with a professional and friendly approach.",
+                "Mis servicios están dirigidos a pequeños grupos, familias o viajeros individuales que buscan calidad, flexibilidad y un trato personalizado. Hablo español, inglés y otros idiomas, asegurando una comunicación fluida y enriquecedora. ¡Déjame guiarte por este rincón mágico de España!": "My services cater to small groups, families, or solo travelers seeking quality, flexibility, and personalized attention. I speak Spanish, English, and other languages, ensuring smooth and enriching communication. Let me guide you through this magical corner of Spain!",
+                "Además, estoy acreditada por la Generalitat de Catalunya como guía oficial, lo que garantiza un conocimiento profundo y actualizado de cada lugar que visitamos. Mi enfoque es sostenible y respetuoso con el patrimonio cultural y natural de la región.": "I am also accredited by the Generalitat de Catalunya as an official guide, ensuring deep and up-to-date knowledge of every place we visit. My approach is sustainable and respectful of the region’s cultural and natural heritage.",
+                "Excursiones Personalizadas": "Personalized Tours",
+                "Barcelona Histórica y Modernista": "Historic and Modernist Barcelona",
+                "Explora la Sagrada Familia, el Barrio Gótico, la Casa Batlló, el Parc Güell y otros tesoros de Gaudí y la historia medieval de Barcelona. Incluye anécdotas históricas y acceso prioritario a monumentos cuando sea posible.": "Explore the Sagrada Familia, Gothic Quarter, Casa Batlló, Parc Güell, and other treasures of Gaudí and Barcelona’s medieval history. Includes historical anecdotes and priority access to monuments when possible.",
+                "Duración: 4-6 horas": "Duration: 4-6 hours",
+                "Grupo: Máximo 8 personas": "Group: Maximum 8 people",
+                "Precio: Desde 50€/persona": "Price: From €50/person",
+                "Costa Brava: Naturaleza y Pueblos": "Costa Brava: Nature and Villages",
+                "Recorre calas escondidas como Aiguablava, pueblos medievales como Pals, Peratallada y Tossa de Mar, y disfruta de la belleza natural del Mediterráneo. Opcional: parada para degustación de productos locales.": "Visit hidden coves like Aiguablava, medieval villages like Pals, Peratallada, and Tossa de Mar, and enjoy the natural beauty of the Mediterranean. Optional: stop for local product tasting.",
+                "Duración: 8-10 horas": "Duration: 8-10 hours",
+                "Grupo: Máximo 6 personas": "Group: Maximum 6 people",
+                "Precio: Desde 80€/persona": "Price: From €80/person",
+                "Ruta Salvador Dalí": "Salvador Dalí Route",
+                "Visita el Teatro-Museo Dalí en Figueres, la casa de Port Lligat en Cadaqués y el castillo de Púbol. Una inmersión en la vida y obra del genio surrealista, con historias exclusivas sobre su legado.": "Visit the Dalí Theatre-Museum in Figueres, the Port Lligat house in Cadaqués, and Púbol Castle. A dive into the life and work of the surrealist genius, with exclusive stories about his legacy.",
+                "Duración: 10-12 horas": "Duration: 10-12 hours",
+                "Grupo: Máximo 6 personas": "Group: Maximum 6 people",
+                "Precio: Desde 120€/persona": "Price: From €120/person",
+                "Montserrat: Montaña y Monasterio": "Montserrat: Mountain and Monastery",
+                "Descubre la montaña sagrada de Montserrat, su monasterio benedictino, la Virgen Negra y rutas de senderismo con vistas espectaculares. Incluye tiempo para escuchar el coro de niños si el horario lo permite.": "Discover the sacred Montserrat mountain, its Benedictine monastery, the Black Virgin, and hiking trails with stunning views. Includes time to hear the boys’ choir if the schedule allows.",
+                "Duración: 6-8 horas": "Duration: 6-8 hours",
+                "Grupo: Máximo 8 personas": "Group: Maximum 8 people",
+                "Precio: Desde 70€/persona": "Price: From €70/person",
+                "Reservar": "Book",
+                "Galería de Experiencias": "Gallery of Experiences",
+                "Sagrada Familia al atardecer": "Sagrada Familia at sunset",
+                "Cala Aiguablava": "Aiguablava Cove",
+                "Teatro-Museo Dalí": "Dalí Theatre-Museum",
+                "Montserrat al amanecer": "Montserrat at sunrise",
+                "Calles del Barrio Gótico": "Gothic Quarter streets",
+                "Barcelona desde las alturas": "Barcelona from above",
+                "Testimonios de Viajeros": "Traveler Testimonials",
+                "\"La excursión con Svetlana por Barcelona fue increíble. Su conocimiento y entusiasmo hicieron que cada rincón cobrara vida. ¡Volveré por la ruta de Costa Brava!\"": "\"The tour with Svetlana in Barcelona was amazing. Her knowledge and enthusiasm brought every corner to life. I’ll be back for the Costa Brava route!\"",
+                "— María G., Madrid": "— María G., Madrid",
+                "\"El tour de Dalí fue una experiencia única. Svetlana conoce cada detalle y lo explica con pasión. Totalmente recomendable.\"": "\"The Dalí tour was a unique experience. Svetlana knows every detail and explains it with passion. Highly recommended.\"",
+                "— John P., London": "— John P., London",
+                "\"Montserrat con Svetlana fue mágico. Nos llevó por senderos que no habríamos encontrado solos. Una guía excepcional.\"": "\"Montserrat with Svetlana was magical. She took us on trails we wouldn’t have found alone. An exceptional guide.\"",
+                "— Laura S., Buenos Aires": "— Laura S., Buenos Aires",
+                "Preguntas Frecuentes": "Frequently Asked Questions",
+                "¿Qué incluye cada tour?": "What does each tour include?",
+                "Todos los tours incluyen guía licenciada, transporte privado (si es necesario), entradas a monumentos (según el tour) y recomendaciones personalizadas. No incluye comidas ni alojamiento, salvo que se especifique.": "All tours include a licensed guide, private transportation (if needed), monument tickets (per tour), and personalized recommendations. Meals and accommodation are not included unless specified.",
+                "¿Puedo personalizar mi excursión?": "Can I customize my tour?",
+                "¡Sí! Contacta conmigo para ajustar horarios, destinos o actividades según tus intereses. Mi objetivo es que tengas una experiencia a medida.": "Yes! Contact me to adjust schedules, destinations, or activities to suit your interests. My goal is a tailor-made experience.",
+                "¿Los tours son aptos para niños o personas mayores?": "Are the tours suitable for children or seniors?",
+                "Adaptamos el ritmo y las actividades a las necesidades del grupo. Indícame cualquier requerimiento especial al reservar.": "We adapt the pace and activities to the group’s needs. Let me know any special requirements when booking.",
+                "¿Cómo reservo un tour?": "How do I book a tour?",
+                "Rellena el formulario de contacto o envíame un email con tus fechas y preferencias. Te responderé en menos de 24 horas.": "Fill out the contact form or email me with your dates and preferences. I’ll reply within 24 hours.",
+                "Contáctame": "Contact Me",
+                "Email: svetlana@barcelona-costabrava.com": "Email: svetlana@barcelona-costabrava.com",
+                "Teléfono: +34 123 456 789": "Phone: +34 123 456 789",
+                "Ubicación: Barcelona, España": "Location: Barcelona, Spain",
+                "Nombre": "Name",
+                "Email": "Email",
+                "Asunto": "Subject",
+                "Mensaje": "Message",
+                "Enviar Mensaje": "Send Message",
+                "Barcelona & Costa Brava Tours": "Barcelona & Costa Brava Tours",
+                "Explora Cataluña con una guía licenciada apasionada por su tierra.": "Explore Catalonia with a licensed guide passionate about her land.",
+                "Enlaces Rápidos": "Quick Links",
+                "Sígueme": "Follow Me",
+                "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. Todos los derechos reservados.": "© 2025 Barcelona & Costa Brava Tours - Svetlana Savenko. All rights reserved.",
+                "Diseñado con <i class='fas fa-heart'></i> para viajeros curiosos.": "Designed with <i class='fas fa-heart'></i> for curious travelers."
             }
         };
 
@@ -126,7 +413,17 @@
             document.querySelectorAll('[data-lang]').forEach(element => {
                 const text = element.textContent;
                 element.textContent = translations[lang][text] || text;
+                if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                    element.placeholder = translations[lang][element.placeholder] || element.placeholder;
+                }
             });
+        });
+
+        // Toggle menú móvil
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
     </script>
 </body>
